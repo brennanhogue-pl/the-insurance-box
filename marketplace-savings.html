@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace – Savings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="health-insurance.html" class="nav-link">Health Insurance</a></li>
+            </ul>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <section class="service-hero" style="padding-top: 140px;">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1 class="service-hero-title">Savings</h1>
+                <p class="service-hero-description">Step 3 of 3 – Household Income</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-interactive" style="max-width: 760px; margin: 0 auto;">
+                <div class="calculator-header">
+                    <h3>What is your annual household income?</h3>
+                    <p>This helps estimate savings and tax credits. You can adjust later.</p>
+                </div>
+                <form id="savingsForm" class="calculator-form">
+                    <div class="calc-row">
+                        <div class="calc-field" style="grid-column: span 2;">
+                            <label for="income">Annual Household Income</label>
+                            <input type="number" id="income" min="0" step="1000" placeholder="e.g., 60000" required>
+                        </div>
+                    </div>
+                    <div class="results-actions" style="margin-top: 0.5rem;">
+                        <a class="btn-secondary" href="marketplace-household.html">Back</a>
+                        <button type="submit" class="btn-primary">See Plans</button>
+                    </div>
+                    <div id="svStatus" class="mp-status" hidden></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    (function(){
+        const form = document.getElementById('savingsForm');
+        const status = document.getElementById('svStatus');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const income = Math.max(0, parseInt(document.getElementById('income').value||'0', 10) || 0);
+            sessionStorage.setItem('mp_income', String(income));
+            // After step 3, go to health page and auto-run search
+            window.location.href = 'health-insurance.html#calculator';
+        });
+    })();
+    </script>
+</body>
+</html>
+
+
+
+
+
+

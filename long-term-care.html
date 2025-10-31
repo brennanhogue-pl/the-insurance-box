@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long-Term Care Insurance - Protect Your Independence | The Insurance Box</title>
+    <meta name="description" content="Protect your independence and assets with comprehensive long-term care insurance. Coverage for in-home care, nursing homes, and asset preservation.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Long-Term Care</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">🏥</span>
+                    Long-Term Care Insurance
+                </h1>
+                <p class="service-hero-description">
+                    Protect your independence and assets with comprehensive long-term care insurance.
+                    Coverage for in-home care, nursing homes, and asset preservation for peace of mind.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">Up to $400/day</span>
+                        <span class="stat-label">Daily Benefit Options</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">30–180 days</span>
+                        <span class="stat-label">Elimination Periods</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1–6 years</span>
+                        <span class="stat-label">Benefit Periods</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Estimate Costs</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options" id="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Long-Term Care Coverage Types</h2>
+                <p class="section-subtitle">Choose the coverage that matches your care goals, budget, and family plan</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Traditional LTC Insurance</h3>
+                        <div class="coverage-price">Benefit-focused <span>custom premiums</span></div>
+                    </div>
+                    <div class="coverage-icon">🛡️</div>
+                    <p class="coverage-description">
+                        Pure long-term care coverage that pays a daily or monthly benefit for
+                        qualified care at home, in assisted living, or in a nursing facility.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Choose daily/monthly benefit amount</li>
+                        <li>Select 1–6 year benefit period</li>
+                        <li>Pick elimination period (30–180 days)</li>
+                        <li>Optional inflation protection (3%–5% compound)</li>
+                        <li>Shared care and return-of-premium riders available</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Maximum care value with flexible benefits
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Popular</div>
+                    <div class="coverage-header">
+                        <h3>Hybrid Life + LTC</h3>
+                        <div class="coverage-price">Asset-based <span>with guarantees</span></div>
+                    </div>
+                    <div class="coverage-icon">🔁</div>
+                    <p class="coverage-description">
+                        Combines permanent life insurance with long-term care benefits so your
+                        money provides value whether you need care or not.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Use for care, leave to heirs, or both</li>
+                        <li>Premiums often guaranteed</li>
+                        <li>Lump-sum or pay-over-time options</li>
+                        <li>Inflation riders available</li>
+                        <li>Cash value and death benefit</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> People wanting guarantees and legacy planning
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Short-Term Care</h3>
+                        <div class="coverage-price">Lower-cost <span>limited duration</span></div>
+                    </div>
+                    <div class="coverage-icon">⏳</div>
+                    <p class="coverage-description">
+                        More affordable coverage that helps with the first months of care,
+                        often easier to qualify for than traditional LTC.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Benefit periods up to 12 months</li>
+                        <li>Home health and facility care options</li>
+                        <li>Flexible elimination periods</li>
+                        <li>May accept certain health conditions</li>
+                        <li>Can complement existing savings</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Budget-conscious or those needing lighter coverage
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Long-Term Care Cost Estimator Placeholder -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Long-Term Care Cost Estimator</h2>
+                    <p class="calculator-description">
+                        Estimate potential premiums and benefits based on the coverage you want,
+                        like daily benefit, benefit period, elimination period, and inflation protection.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🧮</div>
+                            <div>
+                                <h4>Benefit Builder</h4>
+                                <p>Choose daily/monthly benefit and benefit period</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📊</div>
+                            <div>
+                                <h4>Elimination Period</h4>
+                                <p>See how 30–180 day waits impact cost</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📈</div>
+                            <div>
+                                <h4>Inflation Protection</h4>
+                                <p>Project benefits with 3%–5% compound riders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-placeholder">
+                    <form class="ltc-calculator" id="ltc-calculator" onsubmit="event.preventDefault()">
+                        <div class="calculator-grid">
+                            <div class="preview-input">
+                                <label for="ltc-age">Age</label>
+                                <input id="ltc-age" name="age" type="number" min="40" max="79" step="1" value="60" aria-describedby="calc-note" required>
+                            </div>
+                            <div class="preview-input">
+                                <label for="ltc-daily">Daily Benefit ($/day)</label>
+                                <input id="ltc-daily" name="daily" type="number" min="50" max="400" step="10" value="200" required>
+                            </div>
+                            <div class="preview-input">
+                                <label for="ltc-years">Benefit Period (years)</label>
+                                <select id="ltc-years" name="years" required>
+                                    <option value="1">1 year</option>
+                                    <option value="2">2 years</option>
+                                    <option value="3" selected>3 years</option>
+                                    <option value="4">4 years</option>
+                                    <option value="5">5 years</option>
+                                    <option value="6">6 years</option>
+                                </select>
+                            </div>
+                            <div class="preview-input">
+                                <label for="ltc-elim">Elimination Period</label>
+                                <select id="ltc-elim" name="elim" required>
+                                    <option value="30">30 days</option>
+                                    <option value="60">60 days</option>
+                                    <option value="90" selected>90 days</option>
+                                    <option value="180">180 days</option>
+                                </select>
+                            </div>
+                            <div class="preview-input">
+                                <label for="ltc-inflation">Inflation Protection</label>
+                                <select id="ltc-inflation" name="inflation" required>
+                                    <option value="none" selected>None</option>
+                                    <option value="3">3% Compound</option>
+                                    <option value="5">5% Compound</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calculator-preview">
+                            <div class="preview-result" aria-live="polite">
+                                <h4 id="ltc-premium-range">Estimated Premium: $—/month</h4>
+                                <p id="ltc-premium-detail" class="muted"></p>
+                            </div>
+                            <div class="preview-actions">
+                                <button type="reset" class="btn-secondary" id="ltc-reset">Reset</button>
+                                <button type="button" class="btn-primary" onclick="scrollToContact()">Get Personal Quote</button>
+                            </div>
+                        </div>
+                        <p id="calc-note" class="calculator-disclaimer">* Estimates are illustrative only and may vary by carrier, underwriting, riders, and state.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Long-Term Care FAQ</h2>
+                <p class="section-subtitle">Clear answers to common long-term care questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is long-term care?</h3>
+                    <p class="faq-answer">
+                        Help with everyday activities like bathing, dressing, and eating. It can
+                        be provided at home, in assisted living, or in a nursing facility.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Who needs long-term care coverage?</h3>
+                    <p class="faq-answer">
+                        Most people who live a long life will need some care. Planning ahead helps
+                        protect savings and gives you more choices for where and how you receive care.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">When should I buy?</h3>
+                    <p class="faq-answer">
+                        Many people explore coverage in their 50s or early 60s while they are
+                        healthy and premiums are more affordable.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What does it cover?</h3>
+                    <p class="faq-answer">
+                        Care at home, adult day care, assisted living, memory care, and nursing
+                        facilities when you meet benefit triggers (like help needed with 2+ ADLs).
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is an elimination period?</h3>
+                    <p class="faq-answer">
+                        It's the waiting period before benefits begin (like a deductible in time).
+                        Common options are 30, 60, 90, or 180 days.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How does inflation protection work?</h3>
+                    <p class="faq-answer">
+                        An optional rider that increases your benefits each year (like 3% or 5%
+                        compound) so your coverage grows with care costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Plan for Long-Term Care?</h2>
+                    <p class="contact-description">
+                        Our licensed specialists will help you design a plan that fits your goals
+                        and budget, and explain options in plain language.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Personalized plan design</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Carrier and option comparisons</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Medicaid coordination guidance</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Claims and policy support</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>ltc@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Long-Term Care Quote</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="Age" required>
+                            <input type="text" placeholder="State" required>
+                        </div>
+                        <select required>
+                            <option value="">Coverage Type</option>
+                            <option value="traditional">Traditional LTC Insurance</option>
+                            <option value="hybrid">Hybrid Life + LTC</option>
+                            <option value="short-term">Short-Term Care</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea placeholder="Tell us about your care preferences (home care, assisted living, budget)..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Get My Long-Term Care Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in health insurance protection. We're here to help you
+                        find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Health Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">HMO Plans</a></li>
+                        <li><a href="#coverage-options">PPO Plans</a></li>
+                        <li><a href="#coverage-options">High Deductible Plans</a></li>
+                        <li><a href="#calculator">Cost Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Long-Term Care estimator logic
+        (function initLTCEstimator(){
+            var ageEl = document.getElementById('ltc-age');
+            var dailyEl = document.getElementById('ltc-daily');
+            var yearsEl = document.getElementById('ltc-years');
+            var elimEl = document.getElementById('ltc-elim');
+            var inflEl = document.getElementById('ltc-inflation');
+            var rangeEl = document.getElementById('ltc-premium-range');
+            var detailEl = document.getElementById('ltc-premium-detail');
+
+            if (!ageEl || !dailyEl || !yearsEl || !elimEl || !inflEl || !rangeEl || !detailEl) {
+                return;
+            }
+
+            function clamp(value, min, max) {
+                return Math.max(min, Math.min(max, value));
+            }
+
+            function getYearsFactor(years) {
+                var map = {1:0.6, 2:0.8, 3:1.0, 4:1.2, 5:1.35, 6:1.5};
+                return map[years] || 1.0;
+            }
+
+            function getElimFactor(days) {
+                var map = {30:1.15, 60:1.05, 90:1.0, 180:0.9};
+                return map[days] || 1.0;
+            }
+
+            function getInflationFactor(infl) {
+                if (infl === '3') return 1.35;
+                if (infl === '5') return 1.8;
+                return 1.0;
+            }
+
+            function getAgeFactor(age) {
+                // Simple age curve: 40 -> 0.7, 50 -> 1.0, 60 -> 1.3, 70 -> 1.6, 75 -> 1.75
+                var a = clamp(age, 40, 79);
+                return 0.7 + (a - 40) * 0.03;
+            }
+
+            function formatCurrency(n) {
+                return '$' + n.toFixed(0);
+            }
+
+            function compute() {
+                var age = parseInt(ageEl.value || '60', 10);
+                var daily = parseInt(dailyEl.value || '200', 10);
+                var years = parseInt(yearsEl.value || '3', 10);
+                var elim = parseInt(elimEl.value || '90', 10);
+                var infl = inflEl.value || 'none';
+
+                age = clamp(age, 40, 79);
+                daily = clamp(daily, 50, 400);
+                years = clamp(years, 1, 6);
+
+                // Baseline: ~$0.45 per $1 of daily benefit (for 3 yrs, 90-day, no inflation, age 50)
+                var base = 0.45 * daily; // e.g., $200/day -> $90 baseline
+                var yearsFactor = getYearsFactor(years);
+                var elimFactor = getElimFactor(elim);
+                var inflFactor = getInflationFactor(infl);
+                var ageFactor = getAgeFactor(age);
+
+                var estimated = base * yearsFactor * elimFactor * inflFactor * ageFactor;
+                var low = estimated * 0.88; // +/- ~12% band
+                var high = estimated * 1.12;
+
+                rangeEl.textContent = 'Estimated Premium: ' + formatCurrency(low) + '–' + formatCurrency(high) + '/month';
+                var inflText = infl === 'none' ? 'None' : (infl + '% Compound');
+                detailEl.textContent = 'Age ' + age + ', ' + formatCurrency(daily) + '/day, ' + years + ' yrs, ' + elim + ' day wait, Inflation: ' + inflText + '.';
+            }
+
+            ['input','change'].forEach(function(evt){
+                ageEl.addEventListener(evt, compute);
+                dailyEl.addEventListener(evt, compute);
+                yearsEl.addEventListener(evt, compute);
+                elimEl.addEventListener(evt, compute);
+                inflEl.addEventListener(evt, compute);
+            });
+
+            var resetBtn = document.getElementById('ltc-reset');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function(){
+                    setTimeout(compute, 0);
+                });
+            }
+
+            compute();
+        })();
+
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

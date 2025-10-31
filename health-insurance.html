@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance - Find Your Perfect Plan | The Insurance Box</title>
+    <meta name="description" content="Find affordable health insurance plans for you and your family. Individual and family coverage with marketplace navigation assistance.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Health Insurance</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">🏥</span>
+                    Health Insurance
+                </h1>
+                <p class="service-hero-description">
+                    Find the right health insurance plan for you and your family. We'll help you navigate
+                    the marketplace, understand your options, and secure quality coverage you can afford.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">ACA</span>
+                        <span class="stat-label">Compliant Plans</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0–8.5%</span>
+                        <span class="stat-label">Income-Based Cap</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">Plan Comparison</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Compare Plans</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Health Insurance Plan Types</h2>
+                <p class="section-subtitle">Choose the plan type that best fits your healthcare needs and budget</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>HMO Plans</h3>
+                        <div class="coverage-price">Costs vary by age and location</div>
+                    </div>
+                    <div class="coverage-icon">🏥</div>
+                    <p class="coverage-description">
+                        Health Maintenance Organization plans offer comprehensive care through
+                        a network of providers with lower out-of-pocket costs.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Lower monthly premiums</li>
+                        <li>Primary care physician required</li>
+                        <li>Referrals needed for specialists</li>
+                        <li>Lower out-of-pocket costs</li>
+                        <li>Preventive care covered 100%</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Budget-conscious families, routine healthcare needs
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Popular</div>
+                    <div class="coverage-header">
+                        <h3>PPO Plans</h3>
+                        <div class="coverage-price">Costs vary by age and location</div>
+                    </div>
+                    <div class="coverage-icon">🌐</div>
+                    <p class="coverage-description">
+                        Preferred Provider Organization plans offer flexibility to see any provider
+                        while providing better coverage for in-network care.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>No referrals needed</li>
+                        <li>Out-of-network coverage available</li>
+                        <li>Higher flexibility</li>
+                        <li>Direct specialist access</li>
+                        <li>Nationwide provider networks</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Those wanting flexibility, frequent travelers
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>High Deductible Plans</h3>
+                        <div class="coverage-price">Costs vary by age and location</div>
+                    </div>
+                    <div class="coverage-icon">💰</div>
+                    <p class="coverage-description">
+                        High Deductible Health Plans paired with Health Savings Accounts
+                        offer lower premiums and tax advantages.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Lower monthly premiums</li>
+                        <li>HSA eligible</li>
+                        <li>Tax-deductible contributions</li>
+                        <li>Preventive care covered 100%</li>
+                        <li>Catastrophic protection</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Healthy individuals, those building savings
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Insurance Calculator Placeholder -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Health Insurance Cost Calculator</h2>
+                    <p class="calculator-description">
+                        Estimate your health insurance costs based on your income, family size,
+                        and location to find plans that fit your budget.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">💰</div>
+                            <div>
+                                <h4>Subsidy Estimates</h4>
+                                <p>Calculate potential premium tax credits</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📊</div>
+                            <div>
+                                <h4>Plan Comparison</h4>
+                                <p>Compare deductibles and out-of-pocket costs</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🏥</div>
+                            <div>
+                                <h4>Network Check</h4>
+                                <p>Verify your doctors are in network</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-interactive">
+                    <div class="calculator-header">
+                        <h3>Health Insurance Cost Estimator</h3>
+                        <p>Estimate your monthly premium and potential subsidies based on your income and family size.</p>
+                        <p class="mt-2" style="font-size: 0.95rem; color:#64748b;">Estimates only. For official plan options and pricing, use <a href="https://www.healthcare.gov/" target="_blank" rel="noopener" style="color:#0ea5e9; text-decoration: underline;">HealthCare.gov</a>.</p>
+                    </div>
+
+                    <form class="calculator-form" id="healthInsuranceCalculator">
+                        <div class="calc-section">
+                            <h4>Household Information</h4>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="householdIncome">Annual Household Income</label>
+                                    <input type="number" id="householdIncome" placeholder="55000" value="55000" required>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="familySize">Family Size</label>
+                                    <select id="familySize" required>
+                                        <option value="1">1 person</option>
+                                        <option value="2">2 people</option>
+                                        <option value="3" selected>3 people</option>
+                                        <option value="4">4 people</option>
+                                        <option value="5">5 people</option>
+                                        <option value="6">6+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="ages">Ages of Family Members</label>
+                                    <input type="text" id="ages" placeholder="e.g., 35, 32, 8" value="35, 32, 8">
+                                </div>
+                                <div class="calc-field">
+                                    <label for="location">State</label>
+                                    <select id="location" required>
+                                        <option value="utah" selected>Utah</option>
+                                        <option value="california">California</option>
+                                        <option value="texas">Texas</option>
+                                        <option value="florida">Florida</option>
+                                        <option value="new-york">New York</option>
+                                        <option value="other">Other State</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-section">
+                            <h4>Plan Preferences</h4>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="planType">Preferred Plan Type</label>
+                                    <select id="planType" required>
+                                        <option value="bronze">Bronze Plan (Lower Premium, Higher Deductible)</option>
+                                        <option value="silver" selected>Silver Plan (Balanced)</option>
+                                        <option value="gold">Gold Plan (Higher Premium, Lower Deductible)</option>
+                                        <option value="platinum">Platinum Plan (Highest Premium, Lowest Deductible)</option>
+                                    </select>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="deductible">Preferred Deductible Range</label>
+                                    <select id="deductible" required>
+                                        <option value="low">Low ($0-$2,000)</option>
+                                        <option value="medium" selected>Medium ($2,000-$5,000)</option>
+                                        <option value="high">High ($5,000+)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-primary calc-button" onclick="calculateHealthInsurance()">
+                            Calculate My Health Insurance Costs
+                        </button>
+                    </form>
+
+                    <div class="calculator-results" id="healthCalculatorResults" style="display: none;" aria-live="polite" aria-atomic="true">
+                        <div class="results-header">
+                            <h3>Your Health Insurance Cost Estimate</h3>
+                        </div>
+
+                        <div class="results-summary">
+                            <div class="result-main">
+                                <span class="result-label">Estimated Monthly Premium:</span>
+                                <span class="result-amount" id="monthlyPremium">$0</span>
+                            </div>
+                            <div class="result-subtitle" id="subsidyNote"></div>
+                        </div>
+
+                        <div class="results-breakdown">
+                            <h4>Cost Breakdown:</h4>
+                            <div class="breakdown-item">
+                                <span>Benchmark SLCSP (Silver):</span>
+                                <span id="slcspPremium">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Your expected monthly contribution:</span>
+                                <span id="expectedContribution">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Base monthly premium:</span>
+                                <span id="basePremium">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Premium tax credit (estimated):</span>
+                                <span id="subsidyAmount">-$0</span>
+                            </div>
+                            <div class="breakdown-item final">
+                                <span>Your monthly cost:</span>
+                                <span id="finalCost">$0</span>
+                            </div>
+                            <div class="mt-4" style="padding: 1rem; background: rgba(183, 221, 230, 0.1); border-radius: 0.5rem;">
+                                <div class="breakdown-item" style="border: none; padding: 0.25rem 0;">
+                                    <span>Estimated annual deductible:</span>
+                                    <span id="annualDeductible">$0</span>
+                                </div>
+                                <div class="breakdown-item" style="border: none; padding: 0.25rem 0;">
+                                    <span>Out-of-pocket maximum:</span>
+                                    <span id="outOfPocketMax">$0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="results-recommendations">
+                            <h4>Plan Recommendations:</h4>
+                            <div class="recommendation-cards">
+                                <div class="rec-card">
+                                    <div class="rec-icon">💰</div>
+                                    <div class="rec-content">
+                                        <h5>Best Value Option</h5>
+                                        <p id="bestValuePlan">Silver plan with moderate deductible</p>
+                                    </div>
+                                </div>
+                                <div class="rec-card">
+                                    <div class="rec-icon">🏥</div>
+                                    <div class="rec-content">
+                                        <h5>Coverage Level</h5>
+                                        <p id="coverageLevel">Good coverage for routine and emergency care</p>
+                                    </div>
+                                </div>
+                                <div class="rec-card">
+                                    <div class="rec-icon">⏰</div>
+                                    <div class="rec-content">
+                                        <h5>Enrollment Period</h5>
+                                        <p>Open enrollment: Nov 1 - Jan 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="results-actions">
+                            <button class="btn-primary" onclick="scrollToContact()">Get Personalized Quotes</button>
+                            <button class="btn-secondary" onclick="resetHealthCalculator()">Calculate Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Deep Link Section -->
+    <section class="marketplace-section" id="marketplace">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See Marketplace Plans on HealthCare.gov</h2>
+                <p class="section-subtitle">Check plan options and savings eligibility on the official Marketplace. You'll finish enrollment on HealthCare.gov.</p>
+            </div>
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h3 style="margin-bottom: 0.75rem;">Quick Start</h3>
+                    <p>Enter your ZIP and household details below. We’ll open the plan browsing tool on HealthCare.gov in a new tab.</p>
+                    <ul class="coverage-features mt-4">
+                        <li>Compare plans and costs</li>
+                        <li>See if you qualify for savings</li>
+                        <li>Start your application securely</li>
+                    </ul>
+                </div>
+                <div class="calculator-interactive">
+                    <form id="marketplaceForm" class="marketplace-form" novalidate>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="mpZip">ZIP Code</label>
+                                <input type="text" id="mpZip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g., 84101" required>
+                            </div>
+                            <div class="calc-field">
+                                <label for="mpHousehold">Household Size</label>
+                                <select id="mpHousehold" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="mpAges">Ages (comma-separated)</label>
+                                <input type="text" id="mpAges" placeholder="e.g., 35, 32, 8" required>
+                            </div>
+                            <div class="calc-field">
+                                <label for="mpIncome">Annual Household Income (optional)</label>
+                                <input type="number" id="mpIncome" min="0" step="1000" placeholder="e.g., 55000">
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-field" style="grid-column: span 2;">
+                                <label for="mpState">State</label>
+                                <select id="mpState" required>
+                                    <option value="">Select your state</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="results-actions mt-2">
+                            <button type="submit" class="btn-primary">See Marketplace Plans</button>
+                            <button type="button" class="btn-secondary" id="startEnrollmentBtn">Start Application</button>
+                        </div>
+                        <p class="mt-4" style="font-size: 0.95rem; color:#64748b;">We’ll open the official site, <a href="https://www.healthcare.gov/" target="_blank" rel="noopener" style="color:#0ea5e9; text-decoration: underline;">HealthCare.gov</a>, in a new tab.</p>
+                    </form>
+                    <div id="marketplaceResults" class="marketplace-results" aria-live="polite" aria-atomic="true" hidden>
+                        <div class="mp-status" id="mpStatus" hidden></div>
+                        <div class="mp-list" id="mpList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Health Insurance FAQ</h2>
+                <p class="section-subtitle">Get answers to common health insurance questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">When can I enroll in health insurance?</h3>
+                    <p class="faq-answer">
+                        Open enrollment is typically November 1 - January 15. You can also enroll during
+                        special enrollment periods if you have qualifying life events like marriage,
+                        job loss, or moving.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the difference between deductible and out-of-pocket max?</h3>
+                    <p class="faq-answer">
+                        Your deductible is what you pay before insurance starts covering costs.
+                        The out-of-pocket maximum is the most you'll pay in a year, including
+                        deductibles, copays, and coinsurance.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I qualify for premium tax credits?</h3>
+                    <p class="faq-answer">
+                        Many households qualify for premium tax credits based on income and family size.
+                        Under current law, the share you’re expected to contribute toward the benchmark
+                        silver plan is capped on a sliding scale from 0% up to 8.5% of household income
+                        (through 2025, subject to change). Eligibility also depends on whether you have
+                        access to affordable employer coverage.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if my doctor isn't in network?</h3>
+                    <p class="faq-answer">
+                        Out-of-network care typically costs more. Check provider networks before
+                        enrolling, or consider plans with out-of-network benefits if seeing
+                        specific doctors is important to you.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Are prescription drugs covered?</h3>
+                    <p class="faq-answer">
+                        Most health plans cover prescription drugs, but coverage varies by plan.
+                        Check the plan's formulary to see if your medications are covered and
+                        what tier they're on.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What's covered under preventive care?</h3>
+                    <p class="faq-answer">
+                        Preventive services like annual checkups, vaccinations, and screenings
+                        are covered 100% by most plans when you use in-network providers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Find Your Health Plan?</h2>
+                    <p class="contact-description">
+                        Our licensed health insurance specialists will help you navigate the marketplace
+                        and find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Free plan comparison</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Subsidy calculation assistance</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Provider network verification</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Year-round enrollment support</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>health@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Health Insurance Quote</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="Household Income" required>
+                            <select required>
+                                <option value="">Family Size</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5plus">5+ people</option>
+                            </select>
+                        </div>
+                        <select required>
+                            <option value="">Type of Plan Interested In</option>
+                            <option value="hmo">HMO Plan</option>
+                            <option value="ppo">PPO Plan</option>
+                            <option value="hdhp">High Deductible Plan</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea placeholder="Tell us about your healthcare needs..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Get My Health Insurance Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in health insurance protection. We're here to help you
+                        find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Health Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">HMO Plans</a></li>
+                        <li><a href="#coverage-options">PPO Plans</a></li>
+                        <li><a href="#coverage-options">High Deductible Plans</a></li>
+                        <li><a href="#calculator">Cost Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function calculateHealthInsurance() {
+            // Get form values
+            const householdIncome = parseInt(document.getElementById('householdIncome').value) || 0;
+            const familySize = parseInt(document.getElementById('familySize').value) || 1;
+            const ages = document.getElementById('ages').value || '35';
+            const location = document.getElementById('location').value || 'utah';
+            const planType = document.getElementById('planType').value || 'silver';
+            const deductiblePref = document.getElementById('deductible').value || 'medium';
+
+            // 2024 HHS Federal Poverty Guidelines (48 states & DC)
+            const povertyLevels = {
+                1: 15060,
+                2: 20440,
+                3: 25820,
+                4: 31200,
+                5: 36580,
+                6: 41960,
+                7: 47340,
+                8: 52720
+            };
+
+            const fplBase = povertyLevels[Math.min(familySize, 8)];
+            const fpl = fplBase || (povertyLevels[8] + (familySize - 8) * 5380);
+            const incomeAsPercentOfFPL = (householdIncome / fpl) * 100;
+
+            // Base premium estimates by plan type and family size (monthly)
+            const basePremiums = {
+                bronze: {
+                    1: 320, 2: 640, 3: 960, 4: 1280, 5: 1600, 6: 1920
+                },
+                silver: {
+                    1: 420, 2: 840, 3: 1260, 4: 1680, 5: 2100, 6: 2520
+                },
+                gold: {
+                    1: 520, 2: 1040, 3: 1560, 4: 2080, 5: 2600, 6: 3120
+                },
+                platinum: {
+                    1: 620, 2: 1240, 3: 1860, 4: 2480, 5: 3100, 6: 3720
+                }
+            };
+
+            // Location multipliers (approximate)
+            const locationMultipliers = {
+                'utah': 0.9,
+                'california': 1.3,
+                'texas': 0.95,
+                'florida': 1.1,
+                'new-york': 1.4,
+                'other': 1.0
+            };
+
+            // Calculate base premium for chosen plan and SLCSP benchmark (Silver)
+            const familyKey = Math.min(familySize, 6);
+            const planPremium = basePremiums[planType][familyKey] * locationMultipliers[location];
+            const slcspPremium = basePremiums['silver'][familyKey] * locationMultipliers[location];
+
+            // Expected contribution rate under ARPA/IRA (through 2025), piecewise linear
+            function getExpectedContributionRate(percentFPL) {
+                if (percentFPL <= 150) return 0.0; // 0%
+                if (percentFPL <= 200) {
+                    const t = (percentFPL - 150) / 50; // 0..1
+                    return 0.0 + t * 2.0; // 0% -> 2%
+                }
+                if (percentFPL <= 250) {
+                    const t = (percentFPL - 200) / 50;
+                    return 2.0 + t * 2.0; // 2% -> 4%
+                }
+                if (percentFPL <= 300) {
+                    const t = (percentFPL - 250) / 50;
+                    return 4.0 + t * 2.0; // 4% -> 6%
+                }
+                if (percentFPL <= 400) {
+                    const t = (percentFPL - 300) / 100;
+                    return 6.0 + t * 2.5; // 6% -> 8.5%
+                }
+                return 8.5; // >400% FPL capped at 8.5%
+            }
+
+            const expectedContributionRate = getExpectedContributionRate(incomeAsPercentOfFPL);
+            const expectedContributionMonthly = (householdIncome * (expectedContributionRate / 100)) / 12;
+
+            // Premium tax credit is (SLCSP - expected contribution), not below 0 and not above SLCSP
+            const monthlySubsidy = Math.max(slcspPremium - expectedContributionMonthly, 0);
+            const finalMonthlyPremium = Math.max(planPremium - monthlySubsidy, 0);
+
+            // Deductible estimates
+            const deductibles = {
+                bronze: { low: 6500, medium: 7500, high: 8500 },
+                silver: { low: 3500, medium: 4500, high: 5500 },
+                gold: { low: 1500, medium: 2500, high: 3500 },
+                platinum: { low: 500, medium: 1000, high: 1500 }
+            };
+
+            const annualDeductible = deductibles[planType][deductiblePref];
+
+            // Out-of-pocket maximums (2024 limits)
+            const outOfPocketMax = familySize === 1 ? 9450 : 18900;
+
+            // Update results display
+            document.getElementById('monthlyPremium').textContent = formatCurrency(finalMonthlyPremium);
+            document.getElementById('slcspPremium').textContent = formatCurrency(slcspPremium);
+            document.getElementById('expectedContribution').textContent = formatCurrency(expectedContributionMonthly);
+            document.getElementById('basePremium').textContent = formatCurrency(planPremium);
+            document.getElementById('subsidyAmount').textContent = formatCurrency(monthlySubsidy);
+            document.getElementById('finalCost').textContent = formatCurrency(finalMonthlyPremium);
+            document.getElementById('annualDeductible').textContent = formatCurrency(annualDeductible);
+            document.getElementById('outOfPocketMax').textContent = formatCurrency(outOfPocketMax);
+
+            // Generate subsidy note
+            let subsidyNote = '';
+            if (incomeAsPercentOfFPL <= 150) {
+                subsidyNote = 'Based on your income, your benchmark silver plan may be $0/month after tax credits.';
+            } else if (monthlySubsidy > 0) {
+                subsidyNote = `You may qualify for ${formatCurrency(monthlySubsidy * 12)} in annual premium tax credits.`;
+            } else if (slcspPremium <= expectedContributionMonthly) {
+                subsidyNote = 'Based on your income, you may not receive a premium tax credit for the benchmark plan.';
+            } else {
+                subsidyNote = 'Premium estimates shown without subsidies.';
+            }
+            document.getElementById('subsidyNote').textContent = subsidyNote;
+
+            // Update recommendations
+            let bestValue = '';
+            let coverageLevel = '';
+
+            if (planType === 'bronze') {
+                bestValue = 'Good for healthy individuals who rarely need medical care';
+                coverageLevel = 'Basic coverage with high deductibles';
+            } else if (planType === 'silver') {
+                bestValue = 'Best balance of premium cost and coverage benefits';
+                coverageLevel = 'Good coverage for routine and emergency care';
+            } else if (planType === 'gold') {
+                bestValue = 'Good for those who use medical services regularly';
+                coverageLevel = 'Comprehensive coverage with lower out-of-pocket costs';
+            } else {
+                bestValue = 'Premium coverage for maximum peace of mind';
+                coverageLevel = 'Highest level of coverage with minimal out-of-pocket costs';
+            }
+
+            document.getElementById('bestValuePlan').textContent = bestValue;
+            document.getElementById('coverageLevel').textContent = coverageLevel;
+
+            // Show results section
+            document.getElementById('healthCalculatorResults').style.display = 'block';
+
+            // Scroll to results
+            setTimeout(() => {
+                document.getElementById('healthCalculatorResults').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 300);
+        }
+
+        function resetHealthCalculator() {
+            // Reset form to default values
+            document.getElementById('healthInsuranceCalculator').reset();
+
+            // Set default values
+            document.getElementById('householdIncome').value = 55000;
+            document.getElementById('familySize').value = 3;
+            document.getElementById('ages').value = '35, 32, 8';
+            document.getElementById('location').value = 'utah';
+            document.getElementById('planType').value = 'silver';
+            document.getElementById('deductible').value = 'medium';
+
+            // Hide results
+            document.getElementById('healthCalculatorResults').style.display = 'none';
+
+            // Scroll to calculator
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare - Navigate Your Options | The Insurance Box</title>
+    <meta name="description" content="Navigate Medicare with confidence. Get help with Medicare Supplement plans, Medicare Advantage, and Part D prescription coverage.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Medicare</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">🏥</span>
+                    Medicare
+                </h1>
+                <p class="service-hero-description">
+                    Navigate Medicare with confidence. We help you understand your options and choose the right plan.
+                    Medicare Supplement plans, Medicare Advantage, and Part D prescription coverage.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Plan Options</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$200/mo</span>
+                        <span class="stat-label">Average Premium</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">Plan Comparison</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Compare Plans</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options" id="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Medicare Coverage Options</h2>
+                <p class="section-subtitle">Learn how Parts A, B, C, D and Medigap work together</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card" id="part-a">
+                    <div class="coverage-header">
+                        <h3>Part A — Hospital Insurance</h3>
+                        <div class="coverage-price">Premium: <span>$0 for most</span></div>
+                    </div>
+                    <div class="coverage-icon">🏥</div>
+                    <p class="coverage-description">
+                        Helps cover inpatient hospital stays, skilled nursing facility care, hospice,
+                        and limited home health care under Original Medicare.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Inpatient hospital and skilled nursing facility coverage</li>
+                        <li>Hospice care benefits</li>
+                        <li>Limited home health services</li>
+                        <li>Costs include deductibles and coinsurance</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Hospital-related coverage with Original Medicare
+                    </div>
+                </div>
+
+                <div class="coverage-card" id="part-b">
+                    <div class="coverage-header">
+                        <h3>Part B — Medical Insurance</h3>
+                        <div class="coverage-price">Premium: <span>Monthly (set by Medicare)</span></div>
+                    </div>
+                    <div class="coverage-icon">👩‍⚕️</div>
+                    <p class="coverage-description">
+                        Covers doctor visits, outpatient care, preventive services, lab work,
+                        imaging, and durable medical equipment.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Outpatient visits and specialist care</li>
+                        <li>Preventive screenings and vaccines</li>
+                        <li>80/20 cost share after deductible (most services)</li>
+                        <li>Durable medical equipment</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Day-to-day medical needs with Original Medicare
+                    </div>
+                </div>
+
+                <div class="coverage-card featured" id="part-c">
+                    <div class="coverage-badge">Most Popular</div>
+                    <div class="coverage-header">
+                        <h3>Part C — Medicare Advantage</h3>
+                        <div class="coverage-price">Premiums: <span>$0 on many plans</span></div>
+                    </div>
+                    <div class="coverage-icon">🌐</div>
+                    <p class="coverage-description">
+                        All-in-one private plans that combine Part A and Part B, and often Part D.
+                        Many include dental, vision, hearing, and other extra benefits.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>HMO and PPO networks with out-of-pocket maximums</li>
+                        <li>Drug coverage included on many plans</li>
+                        <li>Extra benefits like dental, vision, and hearing</li>
+                        <li>Local and nationwide network options</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Simpler bundled coverage and predictable costs
+                    </div>
+                </div>
+
+                <div class="coverage-card" id="part-d">
+                    <div class="coverage-header">
+                        <h3>Part D — Prescription Drugs</h3>
+                        <div class="coverage-price">Premiums: <span>Vary by plan</span></div>
+                    </div>
+                    <div class="coverage-icon">💊</div>
+                    <p class="coverage-description">
+                        Stand-alone drug plans (or included in many Advantage plans) that help pay
+                        for prescription medications. Formularies and pharmacy networks apply.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Covers generic and brand-name drugs</li>
+                        <li>Tiered formularies and preferred pharmacies</li>
+                        <li>Deductible and coverage stages may apply</li>
+                        <li>Late enrollment penalties without creditable coverage</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Anyone who takes prescription medications
+                    </div>
+                </div>
+
+                <div class="coverage-card" id="medigap">
+                    <div class="coverage-header">
+                        <h3>Medigap — Medicare Supplement</h3>
+                        <div class="coverage-price">Premiums: <span>Vary by age/location</span></div>
+                    </div>
+                    <div class="coverage-icon">🛡️</div>
+                    <p class="coverage-description">
+                        Private plans that help pay Part A & B deductibles, copays, and coinsurance
+                        while you keep Original Medicare and freedom to see any Medicare provider.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Use any doctor who accepts Medicare</li>
+                        <li>No network referrals required</li>
+                        <li>Standardized plan options (e.g., G, N)</li>
+                        <li>Does not include drug coverage (pair with Part D)</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Lowest out-of-pocket costs and broad provider choice
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medicare Plan Finder Guide -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Medicare Plan Finder Guide</h2>
+                    <p class="calculator-description">
+                        Choose between Original Medicare with Medigap and Part D, or a bundled
+                        Medicare Advantage plan. We'll help you compare costs, doctors, and drugs.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">💰</div>
+                            <div>
+                                <h4>Costs & Protection</h4>
+                                <p>Compare premiums, copays, and out-of-pocket maximums</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📊</div>
+                            <div>
+                                <h4>Plan Comparison</h4>
+                                <p>Original + Medigap + Part D vs. Medicare Advantage</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🏥</div>
+                            <div>
+                                <h4>Doctors & Drugs</h4>
+                                <p>Check if your doctors and prescriptions are covered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-placeholder">
+                    <div class="calculator-coming-soon">
+                        <h3>What You'll Need (Takes ~5 Minutes)</h3>
+                        <p>Bring these details and we'll build your personalized Medicare comparison.</p>
+                        <div class="calculator-preview">
+                            <div class="preview-input">
+                                <label>ZIP Code</label>
+                                <input type="text" value="84101" readonly>
+                            </div>
+                            <div class="preview-input">
+                                <label>Doctors</label>
+                                <input type="text" value="2 saved doctors" readonly>
+                            </div>
+                            <div class="preview-input">
+                                <label>Prescriptions</label>
+                                <input type="text" value="5 current medications" readonly>
+                            </div>
+                            <div class="preview-result">
+                                <h4>You choose: Lowest cost vs. widest provider access</h4>
+                            </div>
+                        </div>
+                        <button class="btn-primary" onclick="scrollToContact()">Start My Medicare Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Medicare FAQ</h2>
+                <p class="section-subtitle">Clear answers to common Medicare questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">When can I enroll in Medicare?</h3>
+                    <p class="faq-answer">
+                        Your Initial Enrollment Period starts 3 months before your 65th birthday month
+                        and lasts 7 months total. Annual Enrollment (Oct 15–Dec 7) is when you can
+                        switch Part D or Medicare Advantage plans for the next year. Special Enrollment
+                        Periods apply if you lose employer coverage or move.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Medigap vs. Medicare Advantage — what's the difference?</h3>
+                    <p class="faq-answer">
+                        Medigap pairs with Original Medicare (Parts A & B) to cover deductibles and
+                        coinsurance. You can see any provider that accepts Medicare; you add a Part D
+                        drug plan separately. Medicare Advantage replaces Original Medicare with a
+                        private plan (often includes drug coverage and extras) but uses provider
+                        networks and plan rules.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need Part D if I don't take medications?</h3>
+                    <p class="faq-answer">
+                        You can delay Part D, but if you go 63+ days without creditable drug coverage
+                        after your Initial Enrollment Period, a late enrollment penalty may apply when
+                        you sign up later. Many people choose a low-cost Part D plan to avoid penalties.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I keep my doctors?</h3>
+                    <p class="faq-answer">
+                        With Original Medicare + Medigap, you can see any doctor that accepts Medicare
+                        nationwide. With Medicare Advantage, you typically use in-network providers to
+                        get the lowest costs. We'll check your doctors and hospitals against plan
+                        networks for you.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do prescriptions work on Medicare?</h3>
+                    <p class="faq-answer">
+                        Drug coverage is through Part D (stand-alone) or included in many Advantage
+                        plans. Each plan has a formulary, tiers, and preferred pharmacies that affect
+                        your costs. We'll run your medication list to estimate monthly costs.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What happens if I delay Part B?</h3>
+                    <p class="faq-answer">
+                        If you delay Part B without qualifying employer coverage, you may owe a
+                        permanent late enrollment penalty and have to wait for the General Enrollment
+                        Period to sign up. Talk with us before you delay to avoid penalties.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Review Your Medicare Options?</h2>
+                    <p class="contact-description">
+                        Our licensed Medicare agents compare Original Medicare + Medigap + Part D versus
+                        Medicare Advantage, check your doctors and drugs, and guide your enrollment.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Free Medicare plan comparison</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Doctor and prescription list review</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Medigap rate shopping</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>AEP/OEP/SEP enrollment support</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Medicare Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Medicare Team</h4>
+                                <p><strong>medicare@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Medicare Plan Review</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Medicare Start Month (MM/YYYY)" required>
+                            <select required>
+                                <option value="">Enrollment Status</option>
+                                <option value="turning65">Turning 65 soon</option>
+                                <option value="on-medicare">Already on Medicare</option>
+                                <option value="leaving-employer">Leaving employer/retiring</option>
+                                <option value="disability">Disability/SSDI</option>
+                            </select>
+                        </div>
+                        <select required>
+                            <option value="">Interested In</option>
+                            <option value="advantage">Medicare Advantage (Part C)</option>
+                            <option value="medigap">Medigap + Part D</option>
+                            <option value="part-d">Part D only</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea placeholder="List your doctors and prescriptions (optional)..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Start My Medicare Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in insurance protection. We're here to secure your future with
+                        comprehensive coverage and exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Insurance Calculator</a></li>
+                        <li><a href="#">Claims Center</a></li>
+                        <li><a href="#">Customer Portal</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

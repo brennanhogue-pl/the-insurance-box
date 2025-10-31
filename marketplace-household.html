@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace – Household</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="health-insurance.html" class="nav-link">Health Insurance</a></li>
+            </ul>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <section class="service-hero" style="padding-top: 140px;">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1 class="service-hero-title">Who is getting covered?</h1>
+                <p class="service-hero-description">Step 2 of 3 – Household</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-interactive" style="max-width: 900px; margin: 0 auto;">
+                <div class="calculator-header">
+                    <h3>Add household members</h3>
+                    <p>We’ll compute ages from dates of birth. Tobacco and Medicare are optional.</p>
+                </div>
+
+                <form id="householdForm" class="calculator-form">
+                    <div id="peopleList" class="mcf-services-cards" style="grid-template-columns: 1fr; gap: 16px;"></div>
+                    <div class="results-actions" style="margin-top: 0.5rem; justify-content: space-between;">
+                        <div>
+                            <button type="button" class="btn-secondary" id="addSpouseBtn">+ Add Spouse</button>
+                            <button type="button" class="btn-secondary" id="addDependentBtn">+ Add Dependent</button>
+                        </div>
+                        <div>
+                            <a class="btn-secondary" href="marketplace-location.html">Back</a>
+                            <button type="submit" class="btn-primary" id="nextSavingsBtn">Next</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="hhStatus" class="mp-status" hidden></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    (function(){
+        const peopleList = document.getElementById('peopleList');
+        const addSpouseBtn = document.getElementById('addSpouseBtn');
+        const addDependentBtn = document.getElementById('addDependentBtn');
+        const form = document.getElementById('householdForm');
+        const status = document.getElementById('hhStatus');
+
+        const MAX_DEPENDENTS = 8;
+        let hasSpouse = false;
+        let dependents = 0;
+
+        const today = new Date();
+        const fmt = (d) => d.toISOString().slice(0,10);
+
+        function cardTemplate(kind, index){
+            const label = kind === 'self' ? 'Myself' : (kind === 'spouse' ? 'Spouse' : `Dependent ${index}`);
+            const key = kind === 'self' ? 'self' : (kind === 'spouse' ? 'spouse' : `dep_${index}`);
+            return `
+            <div class="calculator-interactive" style="padding: 16px; border:1px solid var(--neutral-gray-200);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <h4 style="margin:0;">${label}</h4>
+                    ${kind==='self' ? '' : `<button type="button" data-remove="${key}" class="btn-secondary" style="padding:6px 10px;">Remove</button>`}
+                </div>
+                <div class="calc-row">
+                    <div class="calc-field">
+                        <label for="${key}_dob">Date of Birth</label>
+                        <input type="date" id="${key}_dob" required>
+                    </div>
+                    <div class="calc-field">
+                        <label>Sex</label>
+                        <div style="display:flex; gap:8px;">
+                            <label><input type="radio" name="${key}_sex" value="Male" required> Male</label>
+                            <label><input type="radio" name="${key}_sex" value="Female" required> Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-field">
+                        <label><input type="checkbox" id="${key}_tobacco"> Uses tobacco</label>
+                    </div>
+                    <div class="calc-field">
+                        <label><input type="checkbox" id="${key}_medicare"> Enrolled or entitled to Medicare</label>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-field">
+                        <label><input type="checkbox" id="${key}_pregnant"> Pregnant</label>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        function render(){
+            peopleList.innerHTML = '';
+            peopleList.insertAdjacentHTML('beforeend', cardTemplate('self'));
+            if (hasSpouse) peopleList.insertAdjacentHTML('beforeend', cardTemplate('spouse'));
+            for (let i=1;i<=dependents;i++) peopleList.insertAdjacentHTML('beforeend', cardTemplate('dep', i));
+        }
+
+        peopleList.addEventListener('click', (e) => {
+            const btn = e.target.closest('button[data-remove]');
+            if (!btn) return;
+            const key = btn.getAttribute('data-remove');
+            if (key === 'spouse') { hasSpouse = false; }
+            if (key.startsWith('dep_')) { dependents = Math.max(0, dependents - 1); }
+            render();
+        });
+
+        addSpouseBtn.addEventListener('click', () => { hasSpouse = true; render(); });
+        addDependentBtn.addEventListener('click', () => { if (dependents < MAX_DEPENDENTS) { dependents++; render(); } });
+
+        function yearsFromDob(dob){
+            const d = new Date(dob);
+            if (isNaN(d.getTime())) return undefined;
+            let age = today.getFullYear() - d.getFullYear();
+            const m = today.getMonth() - d.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < d.getDate())) age--;
+            return age;
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const members = [];
+            // self
+            const selfDob = document.getElementById('self_dob').value;
+            const selfSex = (form.querySelector('input[name="self_sex"]:checked')||{}).value;
+            const selfAge = yearsFromDob(selfDob);
+            if (!selfAge || !selfSex) { status.hidden=false; status.textContent='Please enter your DOB and sex.'; return; }
+            members.push({ age: selfAge, gender: selfSex, uses_tobacco: !!document.getElementById('self_tobacco').checked, is_pregnant: !!document.getElementById('self_pregnant').checked });
+
+            if (hasSpouse) {
+                const sDob = document.getElementById('spouse_dob').value;
+                const sSex = (form.querySelector('input[name="spouse_sex"]:checked')||{}).value;
+                const sAge = yearsFromDob(sDob);
+                if (!sAge || !sSex) { status.hidden=false; status.textContent='Please complete spouse DOB and sex.'; return; }
+                members.push({ age: sAge, gender: sSex, uses_tobacco: !!document.getElementById('spouse_tobacco').checked, is_pregnant: !!document.getElementById('spouse_pregnant').checked });
+            }
+            for (let i=1;i<=dependents;i++) {
+                const dDob = document.getElementById(`dep_${i}_dob`).value;
+                const dSex = (form.querySelector(`input[name="dep_${i}_sex"]:checked`)||{}).value;
+                const dAge = yearsFromDob(dDob);
+                if (!dAge || !dSex) { status.hidden=false; status.textContent=`Please complete dependent ${i} DOB and sex.`; return; }
+                members.push({ age: dAge, gender: dSex, uses_tobacco: !!document.getElementById(`dep_${i}_tobacco`).checked, is_pregnant: !!document.getElementById(`dep_${i}_pregnant`).checked });
+            }
+
+            // Persist to session
+            sessionStorage.setItem('mp_people', JSON.stringify(members));
+            sessionStorage.setItem('mp_has_married_couple', String(hasSpouse));
+            // Go to step 3 (income)
+            window.location.href = 'marketplace-savings.html';
+        });
+
+        render();
+    })();
+    </script>
+</body>
+</html>
+
+
+
+
+
+

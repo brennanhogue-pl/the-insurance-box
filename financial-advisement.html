@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Planning - Expert Financial Guidance | The Insurance Box</title>
+    <meta name="description" content="Comprehensive financial planning and investment guidance. Retirement planning, investment strategies, and portfolio management services.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Financial Planning</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">📈</span>
+                    Financial Planning
+                </h1>
+                <p class="service-hero-description">
+                    Clear, practical guidance to help you grow savings, invest wisely, and retire with confidence.
+                    Retirement planning, budgeting and cash flow, investment management, risk planning, and more.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clients Advised</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$1,200+</span>
+                        <span class="stat-label">Avg Annual Savings Found</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Fiduciary Advice</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Build My Plan</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Book a Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="how-title">How It Works</h2>
+                <p class="section-subtitle">A simple path from questions to confidence</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>1) Free Intro Call</h3>
+                        <div class="coverage-price">15–20 minutes</div>
+                    </div>
+                    <div class="coverage-icon">☎️</div>
+                    <p class="coverage-description">We learn about your goals and outline next steps. No pressure, no sales.</p>
+                    <ul class="coverage-features">
+                        <li>Understand your priorities</li>
+                        <li>Confirm fit and scope</li>
+                        <li>Clear next-step plan</li>
+                    </ul>
+                </div>
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Helpful</div>
+                    <div class="coverage-header">
+                        <h3>2) Build Your Plan</h3>
+                        <div class="coverage-price">1–2 weeks</div>
+                    </div>
+                    <div class="coverage-icon">🧭</div>
+                    <p class="coverage-description">We organize your finances, set targets, and design a clear, practical roadmap.</p>
+                    <ul class="coverage-features">
+                        <li>Budget and savings setup</li>
+                        <li>Investment and risk plan</li>
+                        <li>Retirement and tax strategies</li>
+                    </ul>
+                </div>
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>3) Implement & Support</h3>
+                        <div class="coverage-price">Ongoing</div>
+                    </div>
+                    <div class="coverage-icon">🚀</div>
+                    <p class="coverage-description">We help you take action and adjust as life changes so you stay on track.</p>
+                    <ul class="coverage-features">
+                        <li>Step‑by‑step actions</li>
+                        <li>Easy progress tracking</li>
+                        <li>Check‑ins when you need them</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip" id="trust" aria-labelledby="trust-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="trust-title">Why Choose Us</h2>
+                <p class="section-subtitle">Advice you can understand and act on</p>
+            </div>
+            <div class="calculator-features">
+                <div class="calculator-feature">
+                    <div class="feature-icon">🛡️</div>
+                    <div>
+                        <h4>Fiduciary Commitment</h4>
+                        <p>Your interests come first—always.</p>
+                    </div>
+                </div>
+                <div class="calculator-feature">
+                    <div class="feature-icon">🔍</div>
+                    <div>
+                        <h4>Transparent Pricing</h4>
+                        <p>Simple, clear fees with no commissions.</p>
+                    </div>
+                </div>
+                <div class="calculator-feature">
+                    <div class="feature-icon">🧠</div>
+                    <div>
+                        <h4>Plain‑English Advice</h4>
+                        <p>We explain the why, not just the what.</p>
+                    </div>
+                </div>
+                <div class="calculator-feature">
+                    <div class="feature-icon">🤝</div>
+                    <div>
+                        <h4>Coordinated Care</h4>
+                        <p>We’ll work with your CPA and attorney when needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options" id="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Financial Planning Services</h2>
+                <p class="section-subtitle">Clear, actionable guidance for your money goals</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Budget & Cash Flow</h3>
+                        <div class="coverage-price">Typical focus: <span>0–12 months</span></div>
+                    </div>
+                    <div class="coverage-icon">💵</div>
+                    <p class="coverage-description">
+                        Build a simple spending plan, organize bills, and map where each dollar goes
+                        so you can save more without feeling restricted.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Track income and expenses clearly</li>
+                        <li>Automate savings and bill payments</li>
+                        <li>Build 3–6 months emergency fund</li>
+                        <li>Reduce high‑interest debt with a plan</li>
+                        <li>Simple monthly dashboard</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Young families, freelancers, anyone getting organized
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Popular</div>
+                    <div class="coverage-header">
+                        <h3>Retirement Planning</h3>
+                        <div class="coverage-price">Typical focus: <span>5–30 years</span></div>
+                    </div>
+                    <div class="coverage-icon">🎯</div>
+                    <p class="coverage-description">
+                        Clarify when you can retire, how much you need, and the steps to get there
+                        with a simple, realistic roadmap.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Goal and timeline planning</li>
+                        <li>Tax‑smart saving strategies</li>
+                        <li>Social Security timing guidance</li>
+                        <li>Withdrawal and income plan</li>
+                        <li>Risk and downside protection</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> 5–15 years from retirement or recently retired
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Investment Management</h3>
+                        <div class="coverage-price">Typical focus: <span>Risk & growth</span></div>
+                    </div>
+                    <div class="coverage-icon">📊</div>
+                    <p class="coverage-description">
+                        Match your investments to your goals and comfort with risk, using
+                        diversified, low‑cost portfolios.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Personalized portfolio design</li>
+                        <li>Diversified, low‑cost funds</li>
+                        <li>Automatic rebalancing</li>
+                        <li>Tax‑efficient strategies</li>
+                        <li>Transparent, simple fees</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Busy professionals, DIY investors wanting a partner
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Insurance Calculator Placeholder -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Financial Goal Planner</h2>
+                    <p class="calculator-description">
+                        Estimate your future balance and see if you’re on track for goals like
+                        retirement, a home, or college—then adjust your plan.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">💰</div>
+                            <div>
+                                <h4>Savings Rate</h4>
+                                <p>See how contributions impact your goals</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📆</div>
+                            <div>
+                                <h4>Timeline</h4>
+                                <p>Project balances over different timeframes</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">⚖️</div>
+                            <div>
+                                <h4>Risk Level</h4>
+                                <p>See how risk choices change outcomes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-placeholder">
+                    <div class="calculator-coming-soon" id="goal-planner" aria-labelledby="goal-planner-title">
+                        <h3 id="goal-planner-title">Interactive Financial Goal Planner</h3>
+                        <p>Adjust the inputs to see your projected balance over time. This is a simple estimate for planning only.</p>
+
+                        <form class="planner-form" aria-describedby="planner-note">
+                            <div class="planner-grid">
+                                <div class="planner-field">
+                                    <label for="gp-current">Current Savings ($)</label>
+                                    <input id="gp-current" type="number" inputmode="decimal" min="0" step="100" value="25000" aria-describedby="gp-current-hint">
+                                    <div id="gp-current-hint" class="field-hint">Approximate existing investable savings</div>
+                                </div>
+                                <div class="planner-field">
+                                    <label for="gp-monthly">Monthly Contribution ($)</label>
+                                    <input id="gp-monthly" type="number" inputmode="decimal" min="0" step="50" value="600">
+                                </div>
+                                <div class="planner-field">
+                                    <label for="gp-years">Years Until Goal</label>
+                                    <input id="gp-years" type="number" inputmode="numeric" min="1" max="60" step="1" value="25">
+                                </div>
+                                <div class="planner-field">
+                                    <label for="gp-return">Expected Annual Return (%)</label>
+                                    <input id="gp-return" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="6.5">
+                                </div>
+                                <div class="planner-field">
+                                    <label for="gp-inflation">Inflation (%)</label>
+                                    <input id="gp-inflation" type="number" inputmode="decimal" min="0" max="10" step="0.1" value="2.5">
+                                </div>
+                                <div class="planner-field">
+                                    <label for="gp-risk">Risk Level</label>
+                                    <select id="gp-risk">
+                                        <option value="conservative">Conservative</option>
+                                        <option value="balanced" selected>Balanced</option>
+                                        <option value="growth">Growth</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="planner-actions">
+                                <button type="button" class="btn-secondary" id="gp-reset">Reset</button>
+                                <button type="button" class="btn-primary" id="gp-run">Update Projection</button>
+                            </div>
+                            <div id="planner-note" class="field-hint">Assumes monthly contributions made at month end. Returns are hypothetical and not guaranteed.</div>
+                        </form>
+
+                        <div class="planner-output">
+                            <div class="planner-metrics" aria-live="polite">
+                                <div class="metric">
+                                    <div class="metric-label">Projected Future Balance</div>
+                                    <div class="metric-value" id="gp-fv">—</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Total Contributions</div>
+                                    <div class="metric-value" id="gp-contrib">—</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Growth Earned</div>
+                                    <div class="metric-value" id="gp-growth">—</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Today’s Dollars</div>
+                                    <div class="metric-value" id="gp-real">—</div>
+                                </div>
+                            </div>
+                            <div class="planner-chart">
+                                <canvas id="gp-chart" height="220" aria-label="Projected balance over time" role="img"></canvas>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" onclick="scrollToContact()">Get Personal Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Financial Planning FAQ</h2>
+                <p class="section-subtitle">Simple answers to common money questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What’s included in a financial plan?</h3>
+                    <p class="faq-answer">
+                        We cover your goals, budget and savings, debt, investing, retirement, insurance
+                        needs, and taxes at a high level—then give you a simple action list.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do you charge for planning?</h3>
+                    <p class="faq-answer">
+                        Transparent, flat or percentage‑based pricing depending on your needs. No
+                        commissions for recommendations—our advice is always in your best interest.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need a lot of money to start?</h3>
+                    <p class="faq-answer">
+                        No. We work with people at every stage. The earlier you start, the easier it
+                        is to reach your goals.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What’s your investment approach?</h3>
+                    <p class="faq-answer">
+                        Diversified, low‑cost funds with the right risk level for you. We focus on
+                        long‑term results, not market timing.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How often will we meet?</h3>
+                    <p class="faq-answer">
+                        We meet as needed—usually quarterly at first, then at least once a year or when
+                        life changes.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Will you coordinate with my CPA or attorney?</h3>
+                    <p class="faq-answer">
+                        Yes. With your permission, we’ll coordinate to keep your tax, legal, and
+                        financial strategies aligned.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Build Your Financial Plan?</h2>
+                    <p class="contact-description">
+                        Talk with a planner who listens, explains clearly, and helps you take the next
+                        best step—no jargon, no pressure.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Fee‑only, transparent guidance</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Fiduciary standard (your interests first)</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Personalized, step‑by‑step roadmap</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Ongoing support as life changes</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>plan@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Start Your Financial Plan</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="Approx. Investable Assets ($)" required>
+                            <select required>
+                                <option value="">Time Horizon</option>
+                                <option value="lt1">Less than 1 year</option>
+                                <option value="1-3">1–3 years</option>
+                                <option value="3-10">3–10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        <select required>
+                            <option value="">Service Interested In</option>
+                            <option value="retirement">Retirement Planning</option>
+                            <option value="investments">Investment Management</option>
+                            <option value="budgeting">Budget & Cash Flow</option>
+                            <option value="comprehensive">Comprehensive Plan</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea placeholder="Tell us about your goals (retire age, big purchases, etc.)" rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Get My Plan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in health insurance protection. We're here to help you
+                        find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Health Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">HMO Plans</a></li>
+                        <li><a href="#coverage-options">PPO Plans</a></li>
+                        <li><a href="#coverage-options">High Deductible Plans</a></li>
+                        <li><a href="#calculator">Cost Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

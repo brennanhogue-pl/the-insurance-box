@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace – Location</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="health-insurance.html" class="nav-link">Health Insurance</a></li>
+            </ul>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <section class="service-hero" style="padding-top: 140px;">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1 class="service-hero-title">Find Affordable Health Coverage</h1>
+                <p class="service-hero-description">Step 1 of 3 – Location</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-interactive" style="max-width: 760px; margin: 0 auto;">
+                <div class="calculator-header">
+                    <h3>Where do you live?</h3>
+                    <p>Enter your ZIP Code. We’ll look up your county and state automatically.</p>
+                </div>
+                <form id="locationForm" class="calculator-form">
+                    <div class="calc-row">
+                        <div class="calc-field" style="grid-column: span 2;">
+                            <label for="locZip">ZIP Code</label>
+                            <input type="text" id="locZip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="e.g., 84020" required>
+                        </div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-field">
+                            <label for="locCounty">County</label>
+                            <select id="locCounty" required>
+                                <option value="">Select county</option>
+                            </select>
+                        </div>
+                        <div class="calc-field">
+                            <label for="locState">State</label>
+                            <input type="text" id="locState" placeholder="State" readonly>
+                        </div>
+                    </div>
+                    <div class="results-actions" style="margin-top: 0.5rem;">
+                        <button type="submit" class="btn-primary" id="locNextBtn" disabled>Continue</button>
+                        <a class="btn-secondary" href="health-insurance.html">Cancel</a>
+                    </div>
+                    <div id="locStatus" class="mp-status" hidden></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    (function(){
+        const zipInput = document.getElementById('locZip');
+        const countySelect = document.getElementById('locCounty');
+        const stateInput = document.getElementById('locState');
+        const status = document.getElementById('locStatus');
+        const nextBtn = document.getElementById('locNextBtn');
+        const form = document.getElementById('locationForm');
+
+        function sanitizeZip(v){ return (v||'').toString().replace(/[^0-9]/g,'').slice(0,5); }
+
+        async function lookupCounties(zip){
+            status.hidden = false; status.textContent = 'Looking up your county...';
+            countySelect.innerHTML = '<option value="">Select county</option>';
+            nextBtn.disabled = true;
+            try {
+                const res = await fetch(`/api/marketplace/counties?zip=${encodeURIComponent(zip)}`, { headers: { 'Accept': 'application/json' } });
+                if(!res.ok){ const t = await res.text(); throw new Error(t||('HTTP '+res.status)); }
+                const data = await res.json();
+                const items = Array.isArray(data?.counties) ? data.counties : (Array.isArray(data) ? data : []);
+                if(!items.length){ status.textContent = 'No counties found for this ZIP. Please check and try again.'; return; }
+                status.hidden = true;
+                // Autofill state from first item
+                const st = items[0].state || items[0].state_code || items[0].usps || items[0].state_abbr || '';
+                stateInput.value = st;
+                // Populate counties
+                items.forEach(c => {
+                    const name = c.name || c.county || `County ${c.fips || ''}`;
+                    const fips = c.countyfips || c.fips || c.county_fips || '';
+                    const opt = document.createElement('option');
+                    opt.value = String(fips);
+                    opt.textContent = name;
+                    countySelect.appendChild(opt);
+                });
+                nextBtn.disabled = !countySelect.value;
+            } catch(err){
+                status.textContent = 'Could not fetch counties: ' + (err?.message || 'Unknown error');
+            }
+        }
+
+        zipInput.addEventListener('input', () => {
+            const z = sanitizeZip(zipInput.value);
+            zipInput.value = z;
+            if (z.length === 5) lookupCounties(z);
+        });
+
+        countySelect.addEventListener('change', () => {
+            nextBtn.disabled = !countySelect.value;
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!countySelect.value) return;
+            // Persist to sessionStorage and move to next step (back to health page for now)
+            sessionStorage.setItem('mp_zip', zipInput.value);
+            sessionStorage.setItem('mp_state', stateInput.value);
+            sessionStorage.setItem('mp_countyfips', countySelect.value);
+            window.location.href = 'marketplace-household.html';
+        });
+    })();
+    </script>
+</body>
+</html>
+
+

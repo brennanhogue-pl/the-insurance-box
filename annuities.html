@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuities - Secure Retirement Income | The Insurance Box</title>
+    <meta name="description" content="Build a secure retirement income stream with annuities. Fixed and variable options with guaranteed income and tax-deferred growth.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Annuities</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">💵</span>
+                    Annuities
+                </h1>
+                <p class="service-hero-description">
+                    Build a secure retirement income stream with our range of annuity products and expert guidance.
+                    Fixed and variable annuities with guaranteed income options and tax-deferred growth.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Carrier Partners</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5–6%</span>
+                        <span class="stat-label">Typical Fixed Rates</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">Consultation</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Estimate Income</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Advisor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Annuity Types -->
+    <section class="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Annuity Types</h2>
+                <p class="section-subtitle">Pick the annuity that matches your timeline, risk comfort, and income needs</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Fixed Annuities</h3>
+                        <div class="coverage-price">Current rates up to <span>6%+</span></div>
+                    </div>
+                    <div class="coverage-icon">🛡️</div>
+                    <p class="coverage-description">
+                        Guaranteed rate for a set term with tax-deferred growth and principal protection.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Predictable, guaranteed interest rate</li>
+                        <li>Terms typically 2–10 years</li>
+                        <li>Penalty-free withdrawal options may apply</li>
+                        <li>Convert to lifetime income later</li>
+                        <li>Backed by highly rated carriers</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Safety-first savers wanting steady growth
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Popular</div>
+                    <div class="coverage-header">
+                        <h3>Fixed Indexed Annuities</h3>
+                        <div class="coverage-price">Growth potential with <span>downside protection</span></div>
+                    </div>
+                    <div class="coverage-icon">📈</div>
+                    <p class="coverage-description">
+                        Earn interest linked to a market index (like the S&P 500) with a 0% floor—no market-loss risk.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>0% floor against market losses</li>
+                        <li>Multiple crediting strategies (caps, participation, spreads)</li>
+                        <li>Optional income riders for lifetime payouts</li>
+                        <li>Tax-deferred growth</li>
+                        <li>Flexible surrender schedules</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Moderate growth seekers who want protection
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Immediate Annuities</h3>
+                        <div class="coverage-price">Income starts in <span>30–90 days</span></div>
+                    </div>
+                    <div class="coverage-icon">⏱️</div>
+                    <p class="coverage-description">
+                        Turn a lump sum into guaranteed income you cannot outlive, starting almost right away.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Lifetime or period-certain payouts</li>
+                        <li>Customizable payment frequencies</li>
+                        <li>Joint-life options for couples</li>
+                        <li>Optional refund/period guarantees</li>
+                        <li>Insulates retirement from market swings</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Near-retirees needing dependable monthly income now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Annuity Income Estimator -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Annuity Income Estimator</h2>
+                    <p class="calculator-description">
+                        Estimate potential monthly income based on your lump sum, deferral time, and payout option.
+                        This is a simplified model for education only—final quotes come from carriers.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🔒</div>
+                            <div>
+                                <h4>Guaranteed Income Options</h4>
+                                <p>Lifetime or period-certain payout structures</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">⏳</div>
+                            <div>
+                                <h4>Deferral Flexibility</h4>
+                                <p>Start income now or later to potentially increase payouts</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📈</div>
+                            <div>
+                                <h4>Tax-Deferred Growth</h4>
+                                <p>Grow assets tax-deferred until you take income</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-interactive" id="annuity-estimator">
+                    <div class="calculator-header">
+                        <h3>Estimate Your Income</h3>
+                        <p>Adjust inputs and see an instant estimate. Talk with an advisor for precise quotes.</p>
+                    </div>
+                    <form class="calculator-form" id="annuity-estimator-form" novalidate>
+                        <div class="calc-section">
+                            <h4>Basic Inputs</h4>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="premium">Investment Amount ($)</label>
+                                    <input id="premium" type="number" min="1000" step="500" value="250000" required>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="deferralYears">Deferral Period (years)</label>
+                                    <input id="deferralYears" type="number" min="0" max="30" step="1" value="10" required>
+                                </div>
+                            </div>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="currentAge">Current Age</label>
+                                    <input id="currentAge" type="number" min="18" max="95" step="1" value="55" required>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="expectedRate">Expected Rate / Index Credit (%)</label>
+                                    <input id="expectedRate" type="number" min="0" max="12" step="0.1" value="5.0" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-section">
+                            <h4>Payout Options</h4>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="payoutOption">Select Option</label>
+                                    <select id="payoutOption">
+                                        <option value="life-single" selected>Lifetime (single)</option>
+                                        <option value="life-joint">Lifetime (joint, 100%)</option>
+                                        <option value="period-10">Period-Certain (10 years)</option>
+                                        <option value="period-20">Period-Certain (20 years)</option>
+                                    </select>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="assumedPayoutAPR">Assumed Payout APR (%)</label>
+                                    <input id="assumedPayoutAPR" type="number" min="0" max="8" step="0.1" value="3.0">
+                                    <small class="mcf-help-text">Used for period-certain amortization only</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-primary calc-button" id="estimateBtn">Estimate Income</button>
+                    </form>
+
+                    <div class="calculator-results" id="annuity-results" hidden>
+                        <div class="results-header">
+                            <h3>Your Estimate</h3>
+                        </div>
+                        <div class="results-summary">
+                            <div class="result-main">
+                                <span class="result-label">Estimated Monthly Income</span>
+                                <span class="result-amount" id="resultMonthly">$0</span>
+                            </div>
+                            <div class="result-subtitle" id="resultSubtitle">Based on inputs and assumptions below.</div>
+                        </div>
+                        <div class="results-breakdown">
+                            <h4>Breakdown</h4>
+                            <div class="breakdown-item"><span>Future Value at Start</span><span id="resultFV">$0</span></div>
+                            <div class="breakdown-item"><span>Effective Payout Rate</span><span id="resultPayoutRate">0%</span></div>
+                            <div class="breakdown-item"><span>Payout Option</span><span id="resultOption">-</span></div>
+                            <div class="breakdown-item final"><span>Monthly Income</span><span id="resultMonthlyFinal">$0</span></div>
+                        </div>
+                        <div class="results-actions">
+                            <button class="btn-secondary" type="button" onclick="scrollToContact()">Get Personal Recommendation</button>
+                        </div>
+                    </div>
+                    <p class="mcf-help-text">This tool provides a simplified estimate and is not a guarantee. Actual carrier quotes may differ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Annuities FAQ</h2>
+                <p class="section-subtitle">Simple answers to common annuity questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is an annuity in plain English?</h3>
+                    <p class="faq-answer">
+                        An annuity is a contract with an insurance company. You put in money (once or over time) and
+                        can receive guaranteed income later—often for life. It can also grow tax-deferred while you wait.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How are fixed and indexed annuities different?</h3>
+                    <p class="faq-answer">
+                        Fixed annuities pay a set interest rate for a term. Fixed indexed annuities credit interest
+                        based on a market index with a 0% floor—so you’re protected from market losses while still having
+                        growth potential.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">When does income start?</h3>
+                    <p class="faq-answer">
+                        Immediate annuities begin paying in about 30–90 days. Deferred annuities can start income years
+                        later—often producing larger payments because the money had time to grow.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Are annuities safe?</h3>
+                    <p class="faq-answer">
+                        They’re backed by the issuing insurance company. We work with highly rated carriers and help you
+                        choose features and guarantees that match your risk comfort.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What about fees and liquidity?</h3>
+                    <p class="faq-answer">
+                        Many fixed and indexed annuities have no annual fees unless you add optional riders. Most have
+                        surrender schedules and include limited penalty‑free withdrawals. We’ll walk you through all details.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How are annuities taxed?</h3>
+                    <p class="faq-answer">
+                        Growth is tax-deferred. When you take income, the gains are typically taxed as ordinary income.
+                        Tax treatment can vary—consult your tax advisor for your situation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Build Guaranteed Retirement Income?</h2>
+                    <p class="contact-description">
+                        Our licensed annuity specialists compare highly rated carriers to design a plan that
+                        fits your income goals, timeline, and risk comfort.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Personalized annuity recommendations</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Fixed and indexed rate shopping</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Lifetime income and rider guidance</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Clear fees and liquidity review</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>annuities@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Annuity Recommendation</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="Investment Amount ($)" required>
+                            <select required>
+                                <option value="">Desired Start</option>
+                                <option value="immediate">Immediate (30–90 days)</option>
+                                <option value="1-5">In 1–5 years</option>
+                                <option value="6-10">In 6–10 years</option>
+                                <option value="10+">In 10+ years</option>
+                            </select>
+                        </div>
+                        <select required>
+                            <option value="">Annuity Type Interested In</option>
+                            <option value="fixed">Fixed</option>
+                            <option value="indexed">Fixed Indexed</option>
+                            <option value="immediate">Immediate</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea placeholder="Tell us your income goal, timeline, and any preferences..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Request My Annuity Plan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in health insurance protection. We're here to help you
+                        find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Health Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">HMO Plans</a></li>
+                        <li><a href="#coverage-options">PPO Plans</a></li>
+                        <li><a href="#coverage-options">High Deductible Plans</a></li>
+                        <li><a href="#calculator">Cost Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        // Annuity Income Estimator Logic
+        (function () {
+            var form = document.getElementById('annuity-estimator-form');
+            var estimateBtn = document.getElementById('estimateBtn');
+            var results = document.getElementById('annuity-results');
+            if (!form || !estimateBtn || !results) return;
+
+            function clamp(num, min, max) { return Math.max(min, Math.min(num, max)); }
+            function toPct(n) { return (n * 100).toFixed(2) + '%'; }
+            function fmt(n) {
+                try { return n.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }); } catch (e) {
+                    return '$' + Math.round(n);
+                }
+            }
+
+            function compoundFutureValue(principal, annualRatePct, years) {
+                var r = annualRatePct / 100;
+                if (r <= -1) return 0;
+                return principal * Math.pow(1 + r, years);
+            }
+
+            function lifePayoutRate(ageAtStart, option) {
+                // Simple heuristic curves (educational only, not actuarial):
+                // base rates rise with age; joint-life slightly lower
+                var base = 0.04 + Math.max(0, ageAtStart - 60) * 0.0015; // ~4% at 60, +0.15%/yr
+                if (ageAtStart < 55) base = 0.035; // younger starts ~3.5%
+                if (ageAtStart > 75) base = 0.055; // cap
+                if (option === 'life-joint') base -= 0.005;
+                return clamp(base, 0.03, 0.06); // 3% to 6%
+            }
+
+            function periodCertainMonthly(futureValue, years, payoutAPR) {
+                // Standard amortization: payment = FV * i / (1 - (1 + i)^-n)
+                var i = (payoutAPR / 100) / 12;
+                var n = years * 12;
+                if (n <= 0) return 0;
+                if (i === 0) return futureValue / n;
+                var denom = 1 - Math.pow(1 + i, -n);
+                if (denom === 0) return 0;
+                return futureValue * i / denom;
+            }
+
+            function estimate() {
+                var premium = Number(document.getElementById('premium').value || 0);
+                var deferralYears = Number(document.getElementById('deferralYears').value || 0);
+                var currentAge = Number(document.getElementById('currentAge').value || 0);
+                var expectedRate = Number(document.getElementById('expectedRate').value || 0);
+                var payoutOption = (document.getElementById('payoutOption').value || 'life-single');
+                var assumedPayoutAPR = Number(document.getElementById('assumedPayoutAPR').value || 3);
+
+                // Guardrails
+                premium = clamp(premium, 0, 10000000);
+                deferralYears = clamp(deferralYears, 0, 50);
+                currentAge = clamp(currentAge, 18, 95);
+                expectedRate = clamp(expectedRate, 0, 12);
+                assumedPayoutAPR = clamp(assumedPayoutAPR, 0, 8);
+
+                var ageAtStart = currentAge + deferralYears;
+                var futureValue = compoundFutureValue(premium, expectedRate, deferralYears);
+                var monthlyIncome = 0;
+                var payoutRate = 0;
+                var optionLabel = '';
+
+                if (payoutOption === 'life-single' || payoutOption === 'life-joint') {
+                    payoutRate = lifePayoutRate(ageAtStart, payoutOption);
+                    monthlyIncome = (futureValue * payoutRate) / 12;
+                    optionLabel = payoutOption === 'life-single' ? 'Lifetime (single)' : 'Lifetime (joint, 100%)';
+                } else if (payoutOption === 'period-10') {
+                    payoutRate = assumedPayoutAPR / 100;
+                    monthlyIncome = periodCertainMonthly(futureValue, 10, assumedPayoutAPR);
+                    optionLabel = 'Period-Certain (10 years)';
+                } else if (payoutOption === 'period-20') {
+                    payoutRate = assumedPayoutAPR / 100;
+                    monthlyIncome = periodCertainMonthly(futureValue, 20, assumedPayoutAPR);
+                    optionLabel = 'Period-Certain (20 years)';
+                }
+
+                // Write results
+                document.getElementById('resultMonthly').textContent = fmt(monthlyIncome);
+                document.getElementById('resultMonthlyFinal').textContent = fmt(monthlyIncome);
+                document.getElementById('resultFV').textContent = fmt(futureValue);
+                document.getElementById('resultPayoutRate').textContent = toPct(payoutRate);
+                document.getElementById('resultOption').textContent = optionLabel;
+                results.hidden = false;
+            }
+
+            estimateBtn.addEventListener('click', estimate);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disability Insurance - Protect Your Income | The Insurance Box</title>
+    <meta name="description" content="Protect your income and maintain your lifestyle with disability insurance. Short and long-term coverage options with affordable premiums.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Disability Insurance</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">🛡️</span>
+                    Disability Insurance
+                </h1>
+                <p class="service-hero-description">
+                    Replace a portion of your paycheck if you can’t work due to illness or injury.
+                    Explore short-term and long-term coverage with options tailored to your occupation and income.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Top Carriers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1–3%</span>
+                        <span class="stat-label">Typical Premium (of income)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">Consultation</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Estimate Benefit</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disability Details: Definitions, Riders, Claims -->
+    <section class="di-details" id="di-details">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Disability Insurance Works</h2>
+                <p class="section-subtitle">Key definitions, optional riders, and what to expect in a claim</p>
+            </div>
+
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Key Definitions</h3>
+                    </div>
+                    <div class="coverage-icon">📚</div>
+                    <ul class="coverage-features">
+                        <li><strong>Own‑Occupation:</strong> Benefits pay if you can’t do the main duties of your specific job.</li>
+                        <li><strong>Any‑Occupation:</strong> Benefits pay only if you can’t work in any suitable job.</li>
+                        <li><strong>Elimination Period:</strong> Waiting time before benefits start (e.g., 30/60/90 days).</li>
+                        <li><strong>Benefit Period:</strong> How long benefits can be paid (e.g., 2 years, 5 years, to age 65/67).</li>
+                        <li><strong>Residual/Partial:</strong> Pays a partial benefit if you can work but with reduced income.</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Popular Riders</h3>
+                    </div>
+                    <div class="coverage-icon">➕</div>
+                    <ul class="coverage-features">
+                        <li><strong>COLA:</strong> Cost‑of‑living adjustment increases your benefit over time.</li>
+                        <li><strong>Future Purchase Option (FPO):</strong> Increase coverage later without medical exam.</li>
+                        <li><strong>Residual/Partial Disability:</strong> Helps if income drops due to limited capacity.</li>
+                        <li><strong>Catastrophic Disability:</strong> Extra benefit for severe impairments.</li>
+                        <li><strong>Own‑Occ Upgrade:</strong> Strengthens the definition for specialized roles.</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Claims Process</h3>
+                    </div>
+                    <div class="coverage-icon">📝</div>
+                    <ol class="coverage-features">
+                        <li><strong>File a claim:</strong> Tell your carrier and submit your claim forms.</li>
+                        <li><strong>Provide proof:</strong> Doctor’s statements and work details support your claim.</li>
+                        <li><strong>Wait period:</strong> Benefits begin after the elimination period ends.</li>
+                        <li><strong>Receive benefits:</strong> Monthly payments continue while you meet the definition.</li>
+                        <li><strong>Ongoing review:</strong> Periodic updates confirm continued eligibility.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="service-hero-buttons mt-6">
+                <button class="btn-primary" onclick="scrollToCalculator()">Estimate My Benefit</button>
+                <button class="btn-secondary" onclick="scrollToContact()">Talk to a Specialist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disability Insurance Overview -->
+    <section class="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Disability Insurance Basics</h2>
+                <p class="section-subtitle">Protect your paycheck if an illness or injury keeps you from working</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Short‑Term Disability (STD)</h3>
+                        <div class="coverage-price">Typical cost: <span>0.5–1% of income</span></div>
+                    </div>
+                    <div class="coverage-icon">⏱️</div>
+                    <p class="coverage-description">
+                        Replaces part of your income for a short period after a waiting (elimination) period.
+                        Common benefit lengths are 3–6 months.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Pays a portion of your paycheck (often 50–70%)</li>
+                        <li>Elimination period: 0–14 days is common</li>
+                        <li>Good for recovery from birth, surgery, or short illnesses</li>
+                        <li>Often offered by employers; supplemental coverage available</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Short recovery periods and immediate income needs
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Chosen</div>
+                    <div class="coverage-header">
+                        <h3>Long‑Term Disability (LTD)</h3>
+                        <div class="coverage-price">Typical cost: <span>1–3% of income</span></div>
+                    </div>
+                    <div class="coverage-icon">🛡️</div>
+                    <p class="coverage-description">
+                        Provides longer‑lasting protection if you can’t work for months or years due to illness or injury.
+                        Benefit periods commonly range from 2 years to age 65/67.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Own‑occupation and any‑occupation definitions available</li>
+                        <li>Typical benefit: 60–70% of gross income (tax treatment varies)</li>
+                        <li>Common elimination period: 60–180 days</li>
+                        <li>Optional riders: COLA, residual/partial, future purchase option</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Protecting long‑term income and career
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Supplemental & Own‑Occ DI</h3>
+                        <div class="coverage-price">Tailored pricing</div>
+                    </div>
+                    <div class="coverage-icon">📈</div>
+                    <p class="coverage-description">
+                        Adds protection on top of employer plans or focuses on your specific job duties
+                        so you can receive benefits even if you can work in a different job.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Bridges gaps from employer group DI</li>
+                        <li>True own‑occupation definitions for specialized roles</li>
+                        <li>High‑income earners can increase benefit caps</li>
+                        <li>Pairs well with residual/partial disability riders</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Specialists and those with employer plans that fall short
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disability Benefit Estimator (Interactive) -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content calculator-interactive" aria-labelledby="diCalcTitle">
+                <div class="calculator-info">
+                    <h2 class="section-title" id="diCalcTitle">Disability Benefit Estimator</h2>
+                    <p class="calculator-description">
+                        Enter your info to estimate a monthly benefit and a rough premium range. Results are illustrative.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">💵</div>
+                            <div>
+                                <h4>Benefit Amount</h4>
+                                <p>Typically 50–70% of gross income</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">⏳</div>
+                            <div>
+                                <h4>Elimination Period</h4>
+                                <p>Longer waits lower premiums</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">📅</div>
+                            <div>
+                                <h4>Benefit Period</h4>
+                                <p>2–10 years or to age 65/67</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-form" role="form" aria-describedby="diCalcHelp">
+                    <div id="diCalcHelp" class="mcf-help-text">We won’t store this. Adjust sliders and see results update instantly.</div>
+
+                    <div class="calc-section" aria-labelledby="incomeSection">
+                        <h4 id="incomeSection">Income & Occupation</h4>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="diIncome">Gross Monthly Income</label>
+                                <input id="diIncome" type="number" min="0" step="100" value="6000" inputmode="decimal" aria-describedby="diIncomeHint">
+                                <div id="diIncomeHint" class="mcf-help-text">Before taxes. Example: 6000</div>
+                            </div>
+                            <div class="calc-field">
+                                <label for="diOcc">Occupation Class</label>
+                                <select id="diOcc" aria-describedby="diOccHint">
+                                    <option value="1">1 - Heavy/manual</option>
+                                    <option value="2">2 - Mixed/field</option>
+                                    <option value="3" selected>3 - Standard office</option>
+                                    <option value="4">4 - Professional</option>
+                                </select>
+                                <div id="diOccHint" class="mcf-help-text">Higher classes generally cost less</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-section" aria-labelledby="benefitSection">
+                        <h4 id="benefitSection">Benefit Settings</h4>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="diReplace">Replacement Rate (<span id="diReplaceOut">60</span>%)</label>
+                                <input id="diReplace" type="range" min="50" max="70" step="1" value="60" aria-valuemin="50" aria-valuemax="70" aria-valuenow="60">
+                                <div class="range-output" id="diBenefitOut">Benefit: $3,600 / month</div>
+                            </div>
+                            <div class="calc-field">
+                                <label for="diElim">Elimination Period</label>
+                                <select id="diElim">
+                                    <option value="30">30 days</option>
+                                    <option value="60">60 days</option>
+                                    <option value="90" selected>90 days</option>
+                                    <option value="180">180 days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label for="diPeriod">Benefit Period</label>
+                                <select id="diPeriod">
+                                    <option value="24">2 years</option>
+                                    <option value="60" selected>5 years</option>
+                                    <option value="120">10 years</option>
+                                    <option value="to65">To age 65/67</option>
+                                </select>
+                            </div>
+                            <div class="calc-field">
+                                <label for="diOwnOcc">Definition</label>
+                                <select id="diOwnOcc">
+                                    <option value="any">Any Occupation</option>
+                                    <option value="own" selected>Own‑Occupation</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-field">
+                                <label><input id="diResidual" type="checkbox" checked> Residual/Partial Rider</label>
+                            </div>
+                            <div class="calc-field">
+                                <label><input id="diCola" type="checkbox"> COLA Rider</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary calc-button" id="diCalcBtn" type="button">Calculate</button>
+                </div>
+
+                <div class="calculator-results" id="diResults" hidden>
+                    <div class="results-header">
+                        <h3>Your Estimate</h3>
+                        <div class="calc-summary-bar">
+                            <div class="summary-item">Benefit: <strong id="diResBenefit">$3,600/mo</strong></div>
+                            <div class="summary-item">Premium: <strong id="diResPremium">$90–$180/mo</strong></div>
+                        </div>
+                    </div>
+                    <div class="results-summary">
+                        <div class="result-main">
+                            <div class="result-label">Estimated Monthly Benefit</div>
+                            <div class="result-amount" id="diResAmount">$3,600</div>
+                            <div class="result-subtitle">Based on <span id="diResReplace">60%</span> of $6,000 income</div>
+                        </div>
+                    </div>
+                    <div class="results-breakdown">
+                        <h4>Premium Estimate</h4>
+                        <div class="breakdown-item"><span>Base premium (1.6% of income)</span><span id="diResBase">$96</span></div>
+                        <div class="breakdown-item"><span>Elimination period adjustment</span><span id="diResElim">−10%</span></div>
+                        <div class="breakdown-item"><span>Benefit period adjustment</span><span id="diResPeriod">+10%</span></div>
+                        <div class="breakdown-item"><span>Definition adjustment</span><span id="diResDef">+10%</span></div>
+                        <div class="breakdown-item"><span>Riders</span><span id="diResRiders">+5%</span></div>
+                        <div class="breakdown-item subtotal"><span>Estimated premium</span><span id="diResPremMonth">$120/mo</span></div>
+                        <div class="breakdown-item final"><span>Range (varies by carrier)</span><span id="diResPremRange">$90–$180/mo</span></div>
+                    </div>
+                    <div class="results-actions">
+                        <a href="#contact" class="btn-secondary">Talk to a Specialist</a>
+                        <a href="#contact" class="btn-primary">Get My Disability Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Disability Insurance FAQ</h2>
+                <p class="section-subtitle">Clear answers to common questions about protecting your paycheck</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is disability insurance?</h3>
+                    <p class="faq-answer">
+                        It’s insurance that pays part of your income if you can’t work because of an illness or injury.
+                        Think of it as a safety net for your paycheck.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How much coverage do I need?</h3>
+                    <p class="faq-answer">
+                        Many people choose 60–70% of their gross income. If premiums are paid with after‑tax dollars,
+                        benefits are typically tax‑free.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What’s the difference between short‑term and long‑term?</h3>
+                    <p class="faq-answer">
+                        Short‑term fills the gap for a few months after a short waiting period. Long‑term kicks in after
+                        a longer waiting period and can last years or to retirement age.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is an elimination period?</h3>
+                    <p class="faq-answer">
+                        It’s how long you wait after becoming disabled before benefits begin. Common options are 30, 60,
+                        90, or 180 days. Longer waits usually lower the premium.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is “own‑occupation” coverage?</h3>
+                    <p class="faq-answer">
+                        It means you can receive benefits if you can’t perform the main duties of your specific job,
+                        even if you could work in another job.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I get coverage if I’m self‑employed?</h3>
+                    <p class="faq-answer">
+                        Yes. Individual long‑term disability plans are available for self‑employed people and small
+                        business owners. We’ll help you document income and choose features.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Protect Your Paycheck?</h2>
+                    <p class="contact-description">
+                        Our licensed disability insurance specialists will help you choose the right benefits,
+                        waiting period, and riders for your job and budget.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Carrier comparison and custom quotes</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Occupation‑specific guidance</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Rider recommendations (COLA, residual, FPO)</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Claims support</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>di@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Disability Insurance Quote</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="Monthly Income (before taxes)" required>
+                            <input type="text" placeholder="Occupation" required>
+                        </div>
+                        <div class="form-row">
+                            <select required>
+                                <option value="">Employer DI Coverage?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unsure">Not sure</option>
+                            </select>
+                            <select required>
+                                <option value="">Coverage Type Interested In</option>
+                                <option value="std">Short‑Term Disability</option>
+                                <option value="ltd">Long‑Term Disability</option>
+                                <option value="supplemental">Supplemental / Own‑Occupation</option>
+                                <option value="unsure">Not sure - need guidance</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Tell us about your work, income, and any employer coverage..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Get My Disability Insurance Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in health insurance protection. We're here to help you
+                        find quality coverage that fits your needs and budget.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Health Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">HMO Plans</a></li>
+                        <li><a href="#coverage-options">PPO Plans</a></li>
+                        <li><a href="#coverage-options">High Deductible Plans</a></li>
+                        <li><a href="#calculator">Cost Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

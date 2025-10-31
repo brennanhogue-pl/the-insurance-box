@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Insurance Box - Protecting What Matters Most</title>
+    <meta name="description" content="Professional insurance services including life, health, Medicare, and financial planning. Get personalized coverage with expert guidance from licensed agents.">
+    <meta name="keywords" content="insurance, life insurance, health insurance, Medicare, financial planning, quotes">
+    <meta name="author" content="The Insurance Box">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="accessibility-enhancements.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true" loading="lazy" decoding="async">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true" loading="lazy" decoding="async">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true" loading="lazy" decoding="async">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <!-- Only Services panel retained -->
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+1-800-INSURE-1" class="menu-cta secondary" aria-label="Call us at (800) INSURE-1">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Protecting What</span>
+                    <span class="title-accent" data-text="Matters Most">Matters Most</span>
+                </h1>
+                <p class="hero-description">
+                    Simple, personalized coverage for your family. We compare top carriers and guide you to the right plan.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" aria-label="Get your free insurance quote">Get Your Quote</button>
+                    <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" aria-label="Explore our insurance services">Explore Services</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">Families Served</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">A+</span>
+                        <span class="stat-label">Top Carriers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="hero-image.png" alt="The Insurance Box - Professional Insurance Services" class="hero-image" decoding="async" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Insurance Solutions</h2>
+                <p class="section-subtitle">
+                    Professional guidance tailored to your needs and your family's future
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/yellow-lock.png" alt="Life Insurance Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Life Insurance</h3>
+                    <p class="service-description">
+                        Secure your family's financial future with personalized life insurance coverage that protects what matters most.
+                    </p>
+                    <ul class="service-features">
+                        <li>Term & whole life options</li>
+                        <li>Competitive rates</li>
+                        <li>Flexible coverage amounts</li>
+                        <li>Expert guidance</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='life-insurance.html'" aria-label="Learn more about life insurance">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/blue-megaphone.svg" alt="Health Insurance Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Health Insurance</h3>
+                    <p class="service-description">
+                        Find the right health insurance plan for you and your family with comprehensive coverage options.
+                    </p>
+                    <ul class="service-features">
+                        <li>Individual & family plans</li>
+                        <li>Marketplace navigation</li>
+                        <li>Subsidy assistance</li>
+                        <li>Plan comparison</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='health-insurance.html'" aria-label="Learn more about health insurance">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/yellow-document.svg" alt="Medicare Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Medicare</h3>
+                    <p class="service-description">
+                        Navigate Medicare with confidence. We help you understand your options and choose the right plan.
+                    </p>
+                    <ul class="service-features">
+                        <li>Medicare Supplement plans</li>
+                        <li>Medicare Advantage</li>
+                        <li>Part D prescription coverage</li>
+                        <li>Annual enrollment help</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='medicare.html'" aria-label="Learn more about Medicare">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/blue-hand-coins.svg" alt="Long-Term Care Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Long-Term Care</h3>
+                    <p class="service-description">
+                        Protect your independence and assets with comprehensive long-term care insurance solutions.
+                    </p>
+                    <ul class="service-features">
+                        <li>In-home care coverage</li>
+                        <li>Nursing home protection</li>
+                        <li>Asset preservation</li>
+                        <li>Family peace of mind</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='long-term-care.html'" aria-label="Learn more about long-term care insurance">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/yellow-lock.png" alt="Disability Insurance Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Disability Insurance</h3>
+                    <p class="service-description">
+                        Protect your income and maintain your lifestyle if you're unable to work due to illness or injury.
+                    </p>
+                    <ul class="service-features">
+                        <li>Short & long-term coverage</li>
+                        <li>Income replacement</li>
+                        <li>Benefit period options</li>
+                        <li>Affordable premiums</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='disability-insurance.html'" aria-label="Learn more about disability insurance">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/blue-dollar.svg" alt="Annuities Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Annuities</h3>
+                    <p class="service-description">
+                        Build a secure retirement income stream with our range of annuity products and expert guidance.
+                    </p>
+                    <ul class="service-features">
+                        <li>Fixed & variable annuities</li>
+                        <li>Guaranteed income options</li>
+                        <li>Tax-deferred growth</li>
+                        <li>Retirement planning</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='annuities.html'" aria-label="Learn more about annuities">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="icons/yellow-computer.svg" alt="Financial Advisement Icon" class="service-icon-img" loading="lazy" decoding="async"></div>
+                    <h3 class="service-title">Financial Advisement</h3>
+                    <p class="service-description">
+                        Comprehensive financial planning and investment guidance to help you achieve your financial goals.
+                    </p>
+                    <ul class="service-features">
+                        <li>Retirement planning</li>
+                        <li>Investment strategies</li>
+                        <li>Risk assessment</li>
+                        <li>Portfolio management</li>
+                    </ul>
+                    <button class="service-btn" onclick="window.location.href='financial-advisement.html'" aria-label="Learn more about financial planning">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Why Choose The Insurance Box?</h2>
+                    <p class="about-description">
+                        With over 15 years of experience in the insurance industry, we've built our reputation
+                        on trust, reliability, and exceptional customer service. Our team of expert agents
+                        works tirelessly to find you the perfect coverage at the best possible rates.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Fast Claims Processing</h4>
+                                <p>Get your claims processed quickly with our streamlined digital process.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-content">
+                                <h4>Personal Agent Support</h4>
+                                <p>Work directly with dedicated agents who understand your unique needs.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">💰</div>
+                            <div class="feature-content">
+                                <h4>Competitive Rates</h4>
+                                <p>Save money with our competitive rates and multi-policy discounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-placeholder">
+                        <div class="reviews-rotator" role="region" aria-label="Customer testimonials">
+                            <div class="rr-track" aria-live="polite">
+                                <!-- Slides will be populated by JS with your 6 provided reviews -->
+                                <div class="rr-slide is-active">
+                                    <div class="rr-stars" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+                                    <p class="rr-quote">"Johnny was great!!! Kept me in the loop for the whole process. Was able to get me a preferred rate and just felt they really cared about my situation on a personal level."
+                                    </p>
+                                    <div class="rr-author">
+                                        <div class="rr-avatar" aria-hidden="true">M</div>
+                                        <div class="rr-meta">
+                                            <span class="rr-name">Michael Logan</span>
+                                            <span class="rr-sub">Google Review • 9 months ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rr-controls">
+                                <div class="rr-dots" role="tablist" aria-label="Select review"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Secure Your Future?</h2>
+                <p class="cta-description">
+                    Speak with a licensed agent today. Get personalized recommendations for you and your family.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large" aria-label="Get your free insurance quote now">Get Free Quote</button>
+                    <div class="cta-contact">
+                        <span>Or call us at</span>
+                        <a href="tel:+13852480612" class="phone-number">(385) 248-0612</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-description">
+                        Ready to protect what matters most? Our licensed agents are here to provide personalized guidance for you and your family.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h4>Visit Our Office</h4>
+                                <p>4421 N Thanksgiving Way<br>Lehi, UT 84043<br>Ste 201</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call Us</h4>
+                                <p>(385) 248-0612<br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p>info@theinsurancebox.com<br>quotes@theinsurancebox.com<br>claims@theinsurancebox.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form modern-contact-form" novalidate>
+                        <div class="mcf-header">
+                            <div class="mcf-secure" aria-label="Secure message">
+                                <span class="mcf-lock" aria-hidden="true">🔒</span>
+                                <span>Secure message</span>
+                            </div>
+                            <div class="mcf-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Form progress">
+                                <div class="mcf-progress-bar" style="width:50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="mcf-steps" data-current="1">
+                            <div class="mcf-step mcf-step-1 active" data-step="1">
+                                <div class="mcf-grid">
+                                    <div class="mcf-field">
+                                        <label for="firstName">First name</label>
+                                        <input id="firstName" name="firstName" type="text" placeholder="First name" required autocomplete="given-name">
+                                    </div>
+                                    <div class="mcf-field">
+                                        <label for="lastName">Last name</label>
+                                        <input id="lastName" name="lastName" type="text" placeholder="Last name" required autocomplete="family-name">
+                                    </div>
+
+                                    <div class="mcf-field full">
+                                        <label for="email">Email</label>
+                                        <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email">
+                                    </div>
+
+                                    <div class="mcf-field full mcf-phone">
+                                        <label for="phone">Phone number</label>
+                                        <div class="mcf-phone-row">
+                                            <span class="mcf-phone-prefix" aria-hidden="true">+1</span>
+                                            <input id="phone" name="phone" type="tel" placeholder="(555) 000-0000" required autocomplete="tel">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mcf-nav">
+                                    <button type="button" class="btn-primary mcf-next" aria-label="Next step">Next</button>
+                                </div>
+                            </div>
+
+                            <div class="mcf-step mcf-step-2" data-step="2" hidden>
+                                <div class="mcf-grid">
+                                    <div class="mcf-field full">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="4" placeholder="Leave us a message..."></textarea>
+                                    </div>
+
+                                    <fieldset class="mcf-field full">
+                                        <legend>Services</legend>
+                                        <p class="mcf-help-text">Select all that you want help with</p>
+                                        <div class="mcf-multiselect" data-ms>
+                                            <button type="button" class="mcf-ms-trigger" aria-haspopup="listbox" aria-expanded="false">
+                                                <span class="mcf-ms-label">Select services</span>
+                                                <span class="mcf-ms-caret" aria-hidden="true">▾</span>
+                                            </button>
+                                            <div class="mcf-ms-panel" role="listbox" hidden>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="life"> <span>Life insurance</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="health"> <span>Health insurance</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="medicare"> <span>Medicare</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="long-term-care"> <span>Long-term care</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="disability"> <span>Disability insurance</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="annuities"> <span>Annuities</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="financial-planning"> <span>Financial planning</span></label>
+                                                <label class="mcf-ms-option"><input type="checkbox" name="services" value="other"> <span>Other</span></label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="mcf-nav">
+                                    <button type="button" class="btn-secondary mcf-back" aria-label="Previous step">Back</button>
+                                    <button type="submit" class="btn-primary mcf-submit" aria-label="Send message">Send message</button>
+                                </div>
+                                <div class="mcf-trust">
+                                    <span class="mcf-agent-avatar" aria-hidden="true">👩‍💼</span>
+                                    <span>Response within 1 business day</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visually-hidden" aria-live="polite" id="mcf-announcer"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon" loading="lazy" decoding="async">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in insurance protection. We're here to secure your future with
+                        comprehensive coverage and exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon" loading="lazy" decoding="async"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon" loading="lazy" decoding="async"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon" loading="lazy" decoding="async"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon" loading="lazy" decoding="async"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Insurance Calculator</a></li>
+                        <li><a href="#">Claims Center</a></li>
+                        <li><a href="#">Customer Portal</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <!-- Mobile sticky CTA bar -->
+    <div class="mobile-sticky-cta" role="region" aria-label="Quick actions" hidden>
+        <a href="#contact" class="sticky-cta quote">Get a Quote</a>
+        <a href="tel:+13852480612" class="sticky-cta call" aria-label="Call us at (385) 248-0612">Call</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance - Protect Your Family's Future | The Insurance Box</title>
+    <meta name="description" content="Secure your family's financial future with affordable life insurance from The Insurance Box. Term and whole life options available.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="the-insurance-box-logo.png" type="image/png">
+</head>
+<body>
+    <!-- Utility Bar -->
+    <div class="utility-bar" role="region" aria-label="Utility">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span class="utility-item">A+ Carriers</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">15 Years Experience</span>
+                <span class="utility-sep">•</span>
+                <span class="utility-item">Licensed Agents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="the-insurance-box-logo.png" alt="The Insurance Box Logo" class="logo-icon">
+                
+            </a>
+            <ul class="nav-menu" aria-label="Primary navigation">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="services-mega">Services <span class="caret" aria-hidden="true">▼</span></button>
+                    <!-- Desktop Mega Menu -->
+                    <div id="services-mega" class="mega-menu" role="menu" hidden>
+                        <div class="mega-grid">
+                            <a class="mega-item" href="life-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Life Insurance</span>
+                                    <span class="mega-desc">Protect family income with term or whole life options.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="health-insurance.html" role="menuitem">
+                                <img src="icons/blue-megaphone.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Health Insurance</span>
+                                    <span class="mega-desc">Individual & family plans with subsidy guidance.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="medicare.html" role="menuitem">
+                                <img src="icons/yellow-document.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Medicare</span>
+                                    <span class="mega-desc">Understand Supplement, Advantage, and Part D.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="long-term-care.html" role="menuitem">
+                                <img src="icons/blue-hand-coins.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Long-Term Care</span>
+                                    <span class="mega-desc">Plan for in-home and facility care costs.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="disability-insurance.html" role="menuitem">
+                                <img src="icons/yellow-lock.png" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Disability Insurance</span>
+                                    <span class="mega-desc">Replace income if illness or injury strikes.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="annuities.html" role="menuitem">
+                                <img src="icons/blue-dollar.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Annuities</span>
+                                    <span class="mega-desc">Create guaranteed retirement income streams.</span>
+                                </div>
+                            </a>
+                            <a class="mega-item" href="financial-advisement.html" role="menuitem">
+                                <img src="icons/yellow-computer.svg" alt="" class="mega-icon" aria-hidden="true">
+                                <div class="mega-content">
+                                    <span class="mega-title">Financial Planning</span>
+                                    <span class="mega-desc">Holistic strategies for long-term goals.</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-footer">
+                            <a class="mega-cta" href="index.html#services">Compare Plans</a>
+                            <a class="mega-cta alt" href="#contact">Get Matched</a>
+                        </div>
+                    </div>
+                    <!-- Mobile accordion submenu (hidden with new sheet) -->
+                    <ul class="mobile-submenu" hidden>
+                        <li><a href="life-insurance.html">Life Insurance</a></li>
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="long-term-care.html">Long-Term Care</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:+13852480612" class="nav-link call-button" aria-label="Call us at (385) 248-0612">Call (385) 248-0612</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="nav-backdrop" hidden></div>
+
+    <!-- Mobile Menu Sheet -->
+    <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <div class="menu-sheet-header">
+            <div class="menu-header-left">
+                <img src="the-insurance-box-logo.png" alt="" class="menu-logo" aria-hidden="true">
+                <h2 id="menu-title" class="menu-title">Menu</h2>
+            </div>
+            <button class="menu-close" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+            <button role="tab" aria-selected="true" class="menu-tab is-active" data-tab="services">Services</button>
+        </div>
+
+        <div class="menu-content">
+            <!-- Services grid (two columns) -->
+            <div class="menu-panel" data-panel="services">
+                <div class="menu-grid">
+                    <a class="menu-card" href="life-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Life Insurance</span>
+                            <span class="menu-card-desc">Protect your family's income with flexible options.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="health-insurance.html">
+                        <img src="icons/blue-megaphone.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Health Insurance</span>
+                            <span class="menu-card-desc">Individual & family plans with subsidy guidance.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="medicare.html">
+                        <img src="icons/yellow-document.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Medicare</span>
+                            <span class="menu-card-desc">Navigate Supplement, Advantage, and Part D.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="long-term-care.html">
+                        <img src="icons/blue-hand-coins.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Long-Term Care</span>
+                            <span class="menu-card-desc">Plan for in-home and facility care costs.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="disability-insurance.html">
+                        <img src="icons/yellow-lock.png" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Disability Insurance</span>
+                            <span class="menu-card-desc">Replace income if illness or injury strikes.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="annuities.html">
+                        <img src="icons/blue-dollar.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Annuities</span>
+                            <span class="menu-card-desc">Create guaranteed retirement income streams.</span>
+                        </div>
+                    </a>
+                    <a class="menu-card" href="financial-advisement.html">
+                        <img src="icons/yellow-computer.svg" alt="" class="menu-card-icon" aria-hidden="true">
+                        <div class="menu-card-content">
+                            <span class="menu-card-title">Financial Planning</span>
+                            <span class="menu-card-desc">Holistic strategies for long-term goals.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-other-links">
+                    <a class="quick-link" href="index.html#about">About</a>
+                    <a class="quick-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-sheet-footer">
+            <a href="#contact" class="menu-cta primary">Get a Quote</a>
+            <a href="tel:+13852480612" class="menu-cta secondary" aria-label="Call us at (385) 248-0612">Call</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Life Insurance</span>
+                </div>
+                <h1 class="service-hero-title">
+                    <span class="service-icon-large">❤️</span>
+                    Life Insurance
+                </h1>
+                <p class="service-hero-description">
+                    Protect your family's financial future with comprehensive life insurance coverage.
+                    Whether you need term life for temporary needs or whole life for permanent protection,
+                    we'll help you find the right policy at the right price.
+                </p>
+                <div class="service-hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">$500K+</span>
+                        <span class="stat-label">Average Coverage</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$30/mo</span>
+                        <span class="stat-label">Starting Premiums</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24hrs</span>
+                        <span class="stat-label">Quick Approval</span>
+                    </div>
+                </div>
+                <div class="service-hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToCalculator()">Calculate Your Needs</button>
+                    <button class="btn-secondary large" onclick="scrollToContact()">Speak with Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Life Insurance Options</h2>
+                <p class="section-subtitle">Choose the coverage that fits your family's needs and budget</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Term Life Insurance</h3>
+                        <div class="coverage-price">Starting at <span>$25/month</span></div>
+                    </div>
+                    <div class="coverage-icon">⏰</div>
+                    <p class="coverage-description">
+                        Affordable protection for a specific period (10, 20, or 30 years).
+                        Perfect for young families and those with temporary financial obligations.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Lower premiums than whole life</li>
+                        <li>Coverage periods: 10, 20, 30 years</li>
+                        <li>Convertible to permanent coverage</li>
+                        <li>Level premiums during term</li>
+                        <li>No medical exam options available</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Young families, mortgage protection, temporary needs
+                    </div>
+                </div>
+
+                <div class="coverage-card featured">
+                    <div class="coverage-badge">Most Popular</div>
+                    <div class="coverage-header">
+                        <h3>Whole Life Insurance</h3>
+                        <div class="coverage-price">Starting at <span>$75/month</span></div>
+                    </div>
+                    <div class="coverage-icon">🏛️</div>
+                    <p class="coverage-description">
+                        Permanent protection with cash value that grows over time.
+                        Provides lifelong coverage with guaranteed premiums.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Guaranteed death benefit</li>
+                        <li>Cash value accumulation</li>
+                        <li>Fixed premiums for life</li>
+                        <li>Dividend potential</li>
+                        <li>Policy loans available</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Estate planning, permanent protection, wealth transfer
+                    </div>
+                </div>
+
+                <div class="coverage-card">
+                    <div class="coverage-header">
+                        <h3>Universal Life Insurance</h3>
+                        <div class="coverage-price">Starting at <span>$50/month</span></div>
+                    </div>
+                    <div class="coverage-icon">🔄</div>
+                    <p class="coverage-description">
+                        Flexible permanent life insurance with adjustable premiums and death benefits.
+                        Cash value earns interest based on current rates.
+                    </p>
+                    <ul class="coverage-features">
+                        <li>Flexible premium payments</li>
+                        <li>Adjustable death benefit</li>
+                        <li>Interest-sensitive cash value</li>
+                        <li>Transparency in costs</li>
+                        <li>Investment options available</li>
+                    </ul>
+                    <div class="coverage-best-for">
+                        <strong>Best for:</strong> Those wanting flexibility, retirement planning
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Insurance Calculator Placeholder -->
+    <section class="calculator-section" id="calculator" hidden>
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2 class="section-title">Life Insurance Calculator</h2>
+                    <p class="calculator-description">
+                        Determine how much life insurance coverage you need based on your
+                        family's financial situation, debts, and future expenses.
+                    </p>
+                    <div class="calculator-features">
+                        <div class="calculator-feature">
+                            <div class="feature-icon">💰</div>
+                            <div>
+                                <h4>Income Replacement</h4>
+                                <p>Calculate years of income needed</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🏠</div>
+                            <div>
+                                <h4>Debt Coverage</h4>
+                                <p>Include mortgage and other debts</p>
+                            </div>
+                        </div>
+                        <div class="calculator-feature">
+                            <div class="feature-icon">🎓</div>
+                            <div>
+                                <h4>Education Costs</h4>
+                                <p>Plan for children's college expenses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-interactive">
+                    <div class="calculator-header">
+                        <h3>Life Insurance Needs Calculator</h3>
+                        <p>Calculate how much life insurance coverage you need to protect your family's financial future.</p>
+                    </div>
+
+                    <div class="calc-progress" aria-label="Progress">
+                        <div class="calc-progress-track">
+                            <div class="calc-progress-bar" id="calcProgressBar" style="width: 0%"></div>
+                        </div>
+                        <div class="calc-progress-text" id="calcProgressText">Step 1 of 5</div>
+                    </div>
+
+                    <div class="calc-mode-toggle" role="tablist" aria-label="Calculator mode">
+                        <button type="button" class="mode-btn is-active" data-mode="simple" aria-selected="true" onclick="setCalculatorMode('simple')">Simple</button>
+                        <button type="button" class="mode-btn" data-mode="detailed" aria-selected="false" onclick="setCalculatorMode('detailed')">Detailed</button>
+                    </div>
+
+                    <div id="calcSummaryBar" class="calc-summary-bar" hidden style="position: sticky; top: 0; z-index: 1; background: var(--neutral-white, #fff); border: 1px solid var(--neutral-200, #eee); border-radius: 8px; padding: 12px; display: flex; align-items: center; gap: 12px;">
+                        <div class="summary-item"><strong>Coverage:</strong> <span id="summaryCoverage">$0</span></div>
+                        <div class="summary-item"><strong>Premium:</strong> <span id="summaryPremium">$0–$0/mo</span></div>
+                        <button class="btn-secondary" onclick="scrollToContact()">Get Quote</button>
+                    </div>
+
+                    <form class="calculator-form" id="lifeInsuranceCalculator">
+                        <details class="calc-section" id="section-personal" data-step="1">
+                            <summary>Personal Information <span class="summary-text" id="personalSummary"></span></summary>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="age">Your Age</label>
+                                    <input type="range" id="age" min="18" max="80" step="1" value="35" oninput="updateRangeValue('age')" required>
+                                    <div class="range-output"><span id="ageDisplay">35</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="calc-section" id="section-financial" data-step="2">
+                            <summary>Financial Information <span class="summary-text" id="financialSummary"></span></summary>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="annualIncome">Annual Income</label>
+                                    <input type="range" id="annualIncome" min="0" max="300000" step="5000" value="75000" oninput="updateRangeValue('annualIncome')" required>
+                                    <div class="range-output"><span id="annualIncomeDisplay">$75,000</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="incomeYears">Years to Replace Income</label>
+                                    <input type="range" id="incomeYears" min="1" max="25" step="1" value="10" oninput="updateRangeValue('incomeYears')" required>
+                                    <div class="range-output"><span id="incomeYearsDisplay">10 years</span></div>
+                                </div>
+                            </div>
+
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="currentSavings">Current Savings & Investments</label>
+                                    <input type="range" id="currentSavings" min="0" max="1000000" step="10000" value="50000" oninput="updateRangeValue('currentSavings')">
+                                    <div class="range-output"><span id="currentSavingsDisplay">$50,000</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="existingInsurance">Existing Life Insurance</label>
+                                    <input type="range" id="existingInsurance" min="0" max="2000000" step="50000" value="0" oninput="updateRangeValue('existingInsurance')">
+                                    <div class="range-output"><span id="existingInsuranceDisplay">$0</span></div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="calc-section" id="section-debts" data-step="3">
+                            <summary>Debts & Expenses <span class="summary-text" id="debtsSummary"></span></summary>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="mortgage">Mortgage Balance</label>
+                                    <input type="range" id="mortgage" min="0" max="1000000" step="10000" value="200000" oninput="updateRangeValue('mortgage')">
+                                    <div class="range-output"><span id="mortgageDisplay">$200,000</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="otherDebts">Other Debts (credit cards, loans)</label>
+                                    <input type="range" id="otherDebts" min="0" max="500000" step="5000" value="15000" oninput="updateRangeValue('otherDebts')">
+                                    <div class="range-output"><span id="otherDebtsDisplay">$15,000</span></div>
+                                </div>
+                            </div>
+
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="finalExpenses">Final Expenses (funeral, medical)</label>
+                                    <input type="range" id="finalExpenses" min="0" max="50000" step="1000" value="15000" oninput="updateRangeValue('finalExpenses')">
+                                    <div class="range-output"><span id="finalExpensesDisplay">$15,000</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="educationCosts">Children's Education Costs</label>
+                                    <input type="range" id="educationCosts" min="0" max="300000" step="5000" value="0" oninput="updateRangeValue('educationCosts')">
+                                    <div class="range-output"><span id="educationCostsDisplay">$0</span></div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="calc-section" id="section-family" data-step="4">
+                            <summary>Family Information <span class="summary-text" id="familySummary"></span></summary>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="dependents">Number of Dependents</label>
+                                    <input type="range" id="dependents" min="0" max="5" step="1" value="2" oninput="updateRangeValue('dependents')" required>
+                                    <div class="range-output"><span id="dependentsDisplay">2</span></div>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="spouseIncome">Spouse Annual Income</label>
+                                    <input type="range" id="spouseIncome" min="0" max="250000" step="5000" value="0" oninput="updateRangeValue('spouseIncome')">
+                                    <div class="range-output"><span id="spouseIncomeDisplay">$0</span></div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="calc-section" id="section-coverage" open data-step="5">
+                            <summary>Coverage Preferences <span class="summary-text" id="coverageSummary"></span></summary>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="termLength">Term Length</label>
+                                    <select id="termLength" required>
+                                        <option value="10">10 years</option>
+                                        <option value="20" selected>20 years</option>
+                                        <option value="30">30 years</option>
+                                    </select>
+                        </div>
+                                <div class="calc-field">
+                                    <label for="smoker">Tobacco Use</label>
+                                    <select id="smoker" required>
+                                        <option value="no" selected>Non-smoker</option>
+                                        <option value="yes">Smoker</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="calc-row">
+                                <div class="calc-field">
+                                    <label for="healthClass">Health Class</label>
+                                    <select id="healthClass" required>
+                                        <option value="preferred_plus" selected>Preferred Plus</option>
+                                        <option value="preferred">Preferred</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="substandard">Substandard</option>
+                                    </select>
+                                </div>
+                                <div class="calc-field">
+                                    <label for="coverageAmount">Coverage Amount</label>
+                                    <input type="range" id="coverageAmount" min="100000" max="2000000" step="50000" value="500000" oninput="updateCoverageDisplay(this.value)">
+                                    <div class="range-output"><span id="coverageAmountDisplay">$500,000</span></div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <div class="calc-actions">
+                            <button type="button" class="btn-secondary" id="stepBackBtn" onclick="prevCalcStep()" style="display:none;">Back</button>
+                            <button type="button" class="btn-primary calc-button" id="stepNextBtn" onclick="nextCalcStep()">Next</button>
+                            <button type="button" class="btn-secondary" onclick="toggleCalculatorForm(true)" id="adjustInputsBtn" style="display:none;">Adjust Inputs</button>
+                        </div>
+                    </form>
+
+                    <div class="calculator-results" id="calculatorResults" role="region" aria-live="polite" aria-label="Calculator results" style="display: none;">
+                        <div class="results-header">
+                            <h3>Your Life Insurance Recommendation</h3>
+                        </div>
+
+                        <div class="results-summary">
+                            <div class="result-main">
+                                <span class="result-label">Recommended Coverage Amount:</span>
+                                <span class="result-amount" id="recommendedCoverage">$0</span>
+                            </div>
+                            <div class="result-subtitle" id="coverageNote"></div>
+                        </div>
+
+                        <div class="results-breakdown">
+                            <h4>Calculation Breakdown:</h4>
+                            <div class="breakdown-item">
+                                <span>Income replacement needs:</span>
+                                <span id="incomeNeeds">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Debt obligations:</span>
+                                <span id="debtTotal">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Final expenses:</span>
+                                <span id="finalExpensesTotal">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Education costs:</span>
+                                <span id="educationTotal">$0</span>
+                            </div>
+                            <div class="breakdown-item subtotal">
+                                <span>Total needs:</span>
+                                <span id="totalNeeds">$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Less: Current savings:</span>
+                                <span id="savingsDeduction">-$0</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Less: Existing insurance:</span>
+                                <span id="insuranceDeduction">-$0</span>
+                            </div>
+                            <div class="breakdown-item final">
+                                <span>Additional coverage needed:</span>
+                                <span id="additionalNeeded">$0</span>
+                            </div>
+                        </div>
+
+                        <div class="results-recommendations">
+                            <h4>Recommended Next Steps:</h4>
+                            <div class="recommendation-cards">
+                                <div class="rec-card">
+                                    <div class="rec-icon">📋</div>
+                                    <div class="rec-content">
+                                        <h5>Get Personalized Quotes</h5>
+                                        <p>Compare rates from multiple top-rated insurers</p>
+                                    </div>
+                                </div>
+                                <div class="rec-card">
+                                    <div class="rec-icon">👨‍💼</div>
+                                    <div class="rec-content">
+                                        <h5>Speak with an Agent</h5>
+                                        <p>Discuss your specific needs with a licensed professional</p>
+                                    </div>
+                                </div>
+                                <div class="rec-card">
+                                    <div class="rec-icon">⚡</div>
+                                    <div class="rec-content">
+                                        <h5>Quick Application</h5>
+                                        <p>Many policies available with instant approval</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="results-premium">
+                            <h4>Sample Premium Estimate</h4>
+                            <p class="results-disclaimer">These are sample rates for illustration only. Actual premiums vary by underwriting, state, and carrier.</p>
+                            <div class="premium-grid">
+                                <div class="premium-card">
+                                    <div class="premium-label"><span id="selectedTermLabel">20-year Term</span></div>
+                                    <div class="premium-amount"><span id="premiumLow">$0</span>–<span id="premiumHigh">$0</span>/mo</div>
+                                    <div class="premium-based-on">Based on <span id="premiumCoverageDisplay">$500,000</span>, <span id="premiumHealthLabel">Preferred Plus</span>, <span id="premiumSmokerLabel">Non-smoker</span>, age <span id="premiumAgeLabel">35</span></div>
+                                </div>
+                            </div>
+                            <div class="results-actions">
+                                <button class="btn-primary" onclick="lockQuote()">Lock My Quote</button>
+                            </div>
+                        </div>
+
+                        <div class="results-actions">
+                            <button class="btn-primary" onclick="scrollToContact()">Get My Personal Quote</button>
+                            <button class="btn-secondary" onclick="resetCalculator()">Calculate Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Get answers to common life insurance questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How much life insurance do I need?</h3>
+                    <p class="faq-answer">
+                        A general rule is 10-12 times your annual income, but it depends on your debts,
+                        family size, and financial goals. Our calculator and agents can help determine
+                        the right amount for your situation.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the difference between term and whole life?</h3>
+                    <p class="faq-answer">
+                        Term life provides temporary coverage at lower cost, while whole life offers
+                        permanent protection with cash value accumulation. Term is ideal for temporary
+                        needs, whole life for long-term wealth planning.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need a medical exam?</h3>
+                    <p class="faq-answer">
+                        Not always. We offer no-exam policies up to certain coverage amounts.
+                        For larger policies, a simple medical exam may be required, but we make
+                        the process as convenient as possible.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How quickly can I get coverage?</h3>
+                    <p class="faq-answer">
+                        Many policies can be approved within 24-48 hours for healthy applicants.
+                        Some no-exam policies offer instant approval with immediate coverage.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I change my coverage later?</h3>
+                    <p class="faq-answer">
+                        Yes, many policies offer flexibility. Term policies can often be converted
+                        to permanent coverage, and some policies allow you to increase coverage
+                        without additional underwriting.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I have health issues?</h3>
+                    <p class="faq-answer">
+                        We work with multiple insurance companies to find coverage even for those
+                        with health conditions. Options include simplified issue and guaranteed
+                        acceptance policies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Protect Your Family?</h2>
+                    <p class="contact-description">
+                        Our licensed life insurance specialists are here to help you find the
+                        perfect coverage for your family's needs and budget.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>No-obligation quotes</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Compare multiple carriers</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Expert guidance throughout</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <div class="benefit-icon">✓</div>
+                            <span>Fast application process</span>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call for Immediate Help</h4>
+                                <p><strong>(385) 248-0612</strong><br>8AM-6PM M-F</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p><strong>life@theinsurancebox.com</strong><br>Get a response within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="quote-form">
+                        <h3>Get Your Life Insurance Quote</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="date" placeholder="Date of Birth" required>
+                            <select id="contactCoverageAmount" required>
+                                <option value="">Coverage Amount Needed</option>
+                                <option value="100000">$100,000</option>
+                                <option value="250000">$250,000</option>
+                                <option value="500000">$500,000</option>
+                                <option value="750000">$750,000</option>
+                                <option value="1000000">$1,000,000</option>
+                                <option value="more">More than $1M</option>
+                            </select>
+                        </div>
+                        <select id="contactCoverageType" required>
+                            <option value="">Type of Coverage Interested In</option>
+                            <option value="term">Term Life Insurance</option>
+                            <option value="whole">Whole Life Insurance</option>
+                            <option value="universal">Universal Life Insurance</option>
+                            <option value="unsure">Not sure - need guidance</option>
+                        </select>
+                        <textarea id="contactNotes" placeholder="Tell us about your family's protection needs..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Get My Life Insurance Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="the-insurance-box-logo-white.png" alt="The Insurance Box Logo" class="logo-icon">
+                        
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in life insurance protection. We're here to secure your
+                        family's future with comprehensive coverage and exceptional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Twitter" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-link"><img src="icons/blue-circle.svg" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Life Insurance</h4>
+                    <ul class="footer-links">
+                        <li><a href="#coverage-options">Term Life Insurance</a></li>
+                        <li><a href="#coverage-options">Whole Life Insurance</a></li>
+                        <li><a href="#coverage-options">Universal Life</a></li>
+                        <li><a href="#calculator">Life Insurance Calculator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="health-insurance.html">Health Insurance</a></li>
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="disability-insurance.html">Disability Insurance</a></li>
+                        <li><a href="annuities.html">Annuities</a></li>
+                        <li><a href="financial-advisement.html">Financial Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Insurance Box. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToCalculator() {
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function calculateLifeInsurance() {
+            // Get form values
+            const age = parseInt(document.getElementById('age').value) || 0;
+            const annualIncome = parseInt(document.getElementById('annualIncome').value) || 0;
+            const incomeYears = parseInt(document.getElementById('incomeYears').value) || 0;
+            const currentSavings = parseInt(document.getElementById('currentSavings').value) || 0;
+            const existingInsurance = parseInt(document.getElementById('existingInsurance').value) || 0;
+            const mortgage = parseInt(document.getElementById('mortgage').value) || 0;
+            const otherDebts = parseInt(document.getElementById('otherDebts').value) || 0;
+            const finalExpenses = parseInt(document.getElementById('finalExpenses').value) || 0;
+            const educationCosts = parseInt(document.getElementById('educationCosts').value) || 0;
+            const dependents = parseInt(document.getElementById('dependents').value) || 0;
+            const spouseIncome = parseInt(document.getElementById('spouseIncome').value) || 0;
+            const termLength = parseInt(document.getElementById('termLength').value) || 20;
+            const smoker = document.getElementById('smoker').value === 'yes';
+            const healthClass = document.getElementById('healthClass').value;
+            const coverageSlider = document.getElementById('coverageAmount');
+
+            // Calculate income replacement needs
+            // Reduce income replacement if spouse has income
+            const adjustedIncome = Math.max(annualIncome - (spouseIncome * 0.5), annualIncome * 0.6);
+            const incomeNeeds = adjustedIncome * incomeYears;
+
+            // Calculate total debts
+            const debtTotal = mortgage + otherDebts;
+
+            // Calculate total needs
+            const totalNeeds = incomeNeeds + debtTotal + finalExpenses + educationCosts;
+
+            // Calculate net insurance needed
+            const totalAssets = currentSavings + existingInsurance;
+            const additionalNeeded = Math.max(totalNeeds - totalAssets, 0);
+
+            // Round to nearest $10,000 for practical purposes
+            const recommendedCoverage = Math.ceil(additionalNeeded / 10000) * 10000;
+
+            // Update results display
+            document.getElementById('recommendedCoverage').textContent = formatCurrency(recommendedCoverage);
+            document.getElementById('incomeNeeds').textContent = formatCurrency(incomeNeeds);
+            document.getElementById('debtTotal').textContent = formatCurrency(debtTotal);
+            document.getElementById('finalExpensesTotal').textContent = formatCurrency(finalExpenses);
+            document.getElementById('educationTotal').textContent = formatCurrency(educationCosts);
+            document.getElementById('totalNeeds').textContent = formatCurrency(totalNeeds);
+            document.getElementById('savingsDeduction').textContent = formatCurrency(-currentSavings);
+            document.getElementById('insuranceDeduction').textContent = formatCurrency(-existingInsurance);
+            document.getElementById('additionalNeeded').textContent = formatCurrency(recommendedCoverage);
+
+            // Generate coverage note based on results
+            let coverageNote = '';
+            if (recommendedCoverage === 0) {
+                coverageNote = 'Your current savings and insurance appear sufficient for your needs.';
+            } else if (recommendedCoverage < 100000) {
+                coverageNote = 'A modest term life policy should meet your needs.';
+            } else if (recommendedCoverage < 500000) {
+                coverageNote = 'Consider a mid-range term life policy for adequate protection.';
+            } else if (recommendedCoverage < 1000000) {
+                coverageNote = 'A substantial term life policy is recommended for your family\'s security.';
+            } else {
+                coverageNote = 'You may want to consider multiple policies or permanent life insurance options.';
+            }
+
+            const summaryLine = `Based on your info, you may need about ${formatCurrency(recommendedCoverage)} in coverage.`;
+            document.getElementById('coverageNote').textContent = summaryLine + ' ' + coverageNote;
+
+            // Show results section
+            // Show results only (hide form to reduce page height)
+            document.getElementById('calculatorResults').style.display = 'block';
+            toggleCalculatorForm(false);
+
+            // Set coverage slider to recommended amount and update display
+            const clampedCoverage = Math.min(Math.max(recommendedCoverage, parseInt(coverageSlider.min)), parseInt(coverageSlider.max));
+            coverageSlider.value = clampedCoverage;
+            updateCoverageDisplay(clampedCoverage);
+
+            // Update premium estimates based on selections
+            updatePremiumEstimates({
+                coverage: clampedCoverage,
+                age,
+                smoker,
+                healthClass,
+                termLength
+            });
+
+            // Show summary bar and update values
+            updateCalcSummaryBarVisibility(true);
+            updateCalcSummaryBar();
+
+            // Scroll to results
+            setTimeout(() => {
+                document.getElementById('calculatorResults').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 300);
+        }
+
+        function resetCalculator() {
+            // Reset form to default values
+            document.getElementById('lifeInsuranceCalculator').reset();
+
+            // Set default values
+            document.getElementById('age').value = 35;
+            document.getElementById('annualIncome').value = 75000;
+            document.getElementById('incomeYears').value = 10;
+            document.getElementById('currentSavings').value = 50000;
+            document.getElementById('existingInsurance').value = 0;
+            document.getElementById('mortgage').value = 200000;
+            document.getElementById('otherDebts').value = 15000;
+            document.getElementById('finalExpenses').value = 15000;
+            document.getElementById('educationCosts').value = 0;
+            document.getElementById('dependents').value = 2;
+            document.getElementById('spouseIncome').value = 0;
+            document.getElementById('termLength').value = 20;
+            document.getElementById('smoker').value = 'no';
+            document.getElementById('healthClass').value = 'preferred_plus';
+            document.getElementById('coverageAmount').value = 500000;
+            updateCoverageDisplay(500000);
+
+            // Hide results
+            document.getElementById('calculatorResults').style.display = 'none';
+            updateCalcSummaryBarVisibility(false);
+            toggleCalculatorForm(true);
+
+            // Scroll to calculator
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add real-time calculation option
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add input event listeners for real-time updates (optional)
+            const calculatorInputs = document.querySelectorAll('#lifeInsuranceCalculator input, #lifeInsuranceCalculator select');
+
+            // Uncomment the lines below if you want real-time calculation as users type
+            // calculatorInputs.forEach(input => {
+            //     input.addEventListener('input', function() {
+            //         if (document.getElementById('calculatorResults').style.display === 'block') {
+            //             calculateLifeInsurance();
+            //         }
+            //     });
+            // });
+
+            // Live premium updates when preference inputs change and results are visible
+            ['termLength','smoker','healthClass','coverageAmount','age'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', () => {
+                        if (document.getElementById('calculatorResults').style.display === 'block') {
+                            const age = parseInt(document.getElementById('age').value) || 35;
+                            const coverage = parseInt(document.getElementById('coverageAmount').value) || 500000;
+                            const smoker = document.getElementById('smoker').value === 'yes';
+                            const healthClass = document.getElementById('healthClass').value;
+                            const termLength = parseInt(document.getElementById('termLength').value) || 20;
+                            updatePremiumEstimates({ coverage, age, smoker, healthClass, termLength });
+                            updateCalcSummaryBar();
+                        }
+                        updateCalcSectionSummaries();
+                    });
+                }
+            });
+
+            // Initialize summaries on load
+            updateCalcSectionSummaries();
+
+            // Initialize stepper
+            initCalcStepper();
+        });
+
+        function updateCoverageDisplay(value) {
+            document.getElementById('coverageAmountDisplay').textContent = formatCurrency(value);
+            if (document.getElementById('calculatorResults').style.display === 'block') {
+                const age = parseInt(document.getElementById('age').value) || 35;
+                const smoker = document.getElementById('smoker').value === 'yes';
+                const healthClass = document.getElementById('healthClass').value;
+                const termLength = parseInt(document.getElementById('termLength').value) || 20;
+                updatePremiumEstimates({ coverage: parseInt(value), age, smoker, healthClass, termLength });
+                updateCalcSummaryBar();
+            }
+        }
+
+        function updateRangeValue(id) {
+            const el = document.getElementById(id);
+            const display = document.getElementById(id + 'Display');
+            if (!el || !display) return;
+            let val = parseInt(el.value) || 0;
+            if (['annualIncome','currentSavings','existingInsurance','mortgage','otherDebts','finalExpenses','educationCosts','spouseIncome'].includes(id)) {
+                display.textContent = formatCurrency(val);
+            } else if (id === 'incomeYears') {
+                display.textContent = `${val} years`;
+            } else {
+                display.textContent = String(val);
+            }
+            updateCalcSectionSummaries();
+        }
+
+        function toggleCalculatorForm(show) {
+            const form = document.getElementById('lifeInsuranceCalculator');
+            const adjustBtn = document.getElementById('adjustInputsBtn');
+            if (show) {
+                form.style.display = '';
+                adjustBtn.style.display = 'none';
+            } else {
+                form.style.display = 'none';
+                adjustBtn.style.display = '';
+            }
+        }
+
+        function estimatePremiumMonthly(coverage, age, smoker, healthClass, termYears) {
+            // Base rate per $100k for 35, non-smoker, Preferred, 20-year term
+            let basePer100k = 12; // USD per month
+
+            // Age adjustment: ~2% per year over 35, ~1% per year under 35 (min 0.7x)
+            if (age > 35) {
+                basePer100k *= (1 + 0.02 * (age - 35));
+            } else if (age < 35) {
+                basePer100k *= Math.max(0.7, 1 - 0.01 * (35 - age));
+            }
+
+            // Smoker multiplier
+            if (smoker) basePer100k *= 1.9;
+
+            // Health class multipliers
+            const healthMultipliers = {
+                'preferred_plus': 0.85,
+                'preferred': 1.0,
+                'standard': 1.35,
+                'substandard': 1.85
+            };
+            basePer100k *= (healthMultipliers[healthClass] || 1.0);
+
+            // Term multipliers
+            const termMultipliers = { 10: 0.8, 20: 1.0, 30: 1.4 };
+            basePer100k *= (termMultipliers[termYears] || 1.0);
+
+            // Scale by coverage
+            const units = Math.max(1, Math.round(coverage / 100000));
+            const monthly = basePer100k * units;
+
+            // Return a range for illustration
+            const low = monthly * 0.9;
+            const high = monthly * 1.15;
+            return { low, high };
+        }
+
+        function updatePremiumEstimates({ coverage, age, smoker, healthClass, termLength }) {
+            const { low, high } = estimatePremiumMonthly(coverage, age, smoker, healthClass, termLength);
+            document.getElementById('premiumLow').textContent = formatCurrency(Math.round(low));
+            document.getElementById('premiumHigh').textContent = formatCurrency(Math.round(high));
+            document.getElementById('premiumCoverageDisplay').textContent = formatCurrency(coverage);
+            document.getElementById('premiumHealthLabel').textContent = formatHealthLabel(healthClass);
+            document.getElementById('premiumSmokerLabel').textContent = smoker ? 'Smoker' : 'Non-smoker';
+            document.getElementById('premiumAgeLabel').textContent = String(age);
+            document.getElementById('selectedTermLabel').textContent = `${termLength}-year Term`;
+
+            // Update summary bar values as well
+            const summaryPremium = `${formatCurrency(Math.round(low))}			–${formatCurrency(Math.round(high))}/mo`;
+            document.getElementById('summaryCoverage').textContent = formatCurrency(coverage);
+            document.getElementById('summaryPremium').textContent = `${formatCurrency(Math.round(low))}–${formatCurrency(Math.round(high))}/mo`;
+        }
+
+        function formatHealthLabel(value) {
+            switch (value) {
+                case 'preferred_plus': return 'Preferred Plus';
+                case 'preferred': return 'Preferred';
+                case 'standard': return 'Standard';
+                case 'substandard': return 'Substandard';
+                default: return 'Preferred';
+            }
+        }
+
+        function lockQuote() {
+            // Read current selections
+            const coverage = parseInt(document.getElementById('coverageAmount').value) || 500000;
+            const termLength = parseInt(document.getElementById('termLength').value) || 20;
+            const age = parseInt(document.getElementById('age').value) || 35;
+            const smoker = document.getElementById('smoker').value === 'yes';
+            const healthClass = document.getElementById('healthClass').value;
+
+            // Prefill contact form selects
+            const coverageSelect = document.getElementById('contactCoverageAmount');
+            if (coverage <= 100000) coverageSelect.value = '100000';
+            else if (coverage <= 250000) coverageSelect.value = '250000';
+            else if (coverage <= 500000) coverageSelect.value = '500000';
+            else if (coverage <= 750000) coverageSelect.value = '750000';
+            else if (coverage <= 1000000) coverageSelect.value = '1000000';
+            else coverageSelect.value = 'more';
+
+            const typeSelect = document.getElementById('contactCoverageType');
+            typeSelect.value = 'term';
+
+            // Notes
+            const notes = document.getElementById('contactNotes');
+            const smokerLabel = smoker ? 'Smoker' : 'Non-smoker';
+            notes.value = `Please quote a ${termLength}-year term policy, ${formatHealthLabel(healthClass)}, ${smokerLabel}, coverage ${formatCurrency(coverage)}. My age is ${age}.`;
+
+            // Scroll to contact
+            scrollToContact();
+        }
+
+        function setCalculatorMode(mode) {
+            const simpleBtn = document.querySelector('.mode-btn[data-mode="simple"]');
+            const detailedBtn = document.querySelector('.mode-btn[data-mode="detailed"]');
+            const sections = [
+                document.getElementById('section-personal'),
+                document.getElementById('section-financial'),
+                document.getElementById('section-debts'),
+                document.getElementById('section-family'),
+                document.getElementById('section-coverage')
+            ];
+
+            if (mode === 'simple') {
+                simpleBtn.classList.add('is-active');
+                simpleBtn.setAttribute('aria-selected', 'true');
+                detailedBtn.classList.remove('is-active');
+                detailedBtn.setAttribute('aria-selected', 'false');
+                // Collapse all sections except coverage
+                sections.forEach(sec => {
+                    if (!sec) return;
+                    if (sec.id === 'section-coverage') sec.setAttribute('open', ''); else sec.removeAttribute('open');
+                });
+            } else {
+                detailedBtn.classList.add('is-active');
+                detailedBtn.setAttribute('aria-selected', 'true');
+                simpleBtn.classList.remove('is-active');
+                simpleBtn.setAttribute('aria-selected', 'false');
+                // Expand all
+                sections.forEach(sec => sec && sec.setAttribute('open', ''));
+            }
+        }
+
+        function updateCalcSummaryBarVisibility(show) {
+            const bar = document.getElementById('calcSummaryBar');
+            bar.hidden = !show;
+        }
+
+        function updateCalcSectionSummaries() {
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const personal = `${age || '—'} yrs${gender ? `, ${gender}` : ''}`;
+            document.getElementById('personalSummary').textContent = ` · ${personal}`;
+
+            const income = document.getElementById('annualIncome').value;
+            const years = document.getElementById('incomeYears').value;
+            document.getElementById('financialSummary').textContent = ` · $${Number(income || 0).toLocaleString()}/yr, ${years} yrs`;
+
+            const mortgage = document.getElementById('mortgage').value;
+            const debts = document.getElementById('otherDebts').value;
+            document.getElementById('debtsSummary').textContent = ` · Mortgage $${Number(mortgage||0).toLocaleString()}, Debts $${Number(debts||0).toLocaleString()}`;
+
+            const deps = document.getElementById('dependents').value;
+            const spouse = document.getElementById('spouseIncome').value;
+            document.getElementById('familySummary').textContent = ` · ${deps} dependents, Spouse $${Number(spouse||0).toLocaleString()}`;
+
+            const term = document.getElementById('termLength').value;
+            const smoker = document.getElementById('smoker').value === 'yes' ? 'Smoker' : 'Non-smoker';
+            const health = formatHealthLabel(document.getElementById('healthClass').value);
+            const coverage = parseInt(document.getElementById('coverageAmount').value) || 0;
+            document.getElementById('coverageSummary').textContent = ` · ${term} yrs, ${smoker}, ${health}, ${formatCurrency(coverage)}`;
+        }
+
+        function updateCalcSummaryBar() {
+            // values already set by updatePremiumEstimates
+            updateCalcSectionSummaries();
+        }
+
+        // Stepper logic (single-question wizard)
+        let calcCurrentStep = 1;
+        let calcTotalSteps = 0;
+        let calcQuestionNodes = [];
+
+        function initCalcStepper() {
+            // Collect all question fields in DOM order
+            calcQuestionNodes = Array.from(document.querySelectorAll('#lifeInsuranceCalculator .calc-field'));
+            calcTotalSteps = calcQuestionNodes.length;
+
+            // Hide all sections and rows initially
+            const sections = Array.from(document.querySelectorAll('#lifeInsuranceCalculator .calc-section'));
+            sections.forEach(sec => {
+                sec.setAttribute('open', '');
+                sec.style.display = 'none';
+                Array.from(sec.querySelectorAll('.calc-row')).forEach(row => row.style.display = 'none');
+                Array.from(sec.querySelectorAll('.calc-field')).forEach(f => f.style.display = 'none');
+            });
+
+            calcCurrentStep = 1;
+            showStep(calcCurrentStep);
+            updateCalcProgress();
+            updateStepButtons();
+        }
+
+        function updateCalcProgress() {
+            const pct = Math.round((calcCurrentStep - 1) / calcTotalSteps * 100);
+            document.getElementById('calcProgressBar').style.width = pct + '%';
+            document.getElementById('calcProgressText').textContent = `Question ${calcCurrentStep} of ${calcTotalSteps}`;
+        }
+
+        function showStep(step) {
+            const targetField = calcQuestionNodes[step - 1];
+            if (!targetField) return;
+
+            // Hide all sections/rows/fields
+            const sections = Array.from(document.querySelectorAll('#lifeInsuranceCalculator .calc-section'));
+            sections.forEach(sec => {
+                sec.style.display = 'none';
+                Array.from(sec.querySelectorAll('.calc-row')).forEach(row => row.style.display = 'none');
+                Array.from(sec.querySelectorAll('.calc-field')).forEach(f => f.style.display = 'none');
+            });
+
+            // Show only the section, row, and field for current question
+            const section = targetField.closest('.calc-section');
+            const row = targetField.closest('.calc-row');
+            if (section) section.style.display = '';
+            if (row) row.style.display = '';
+            targetField.style.display = '';
+
+            calcCurrentStep = step;
+            updateCalcProgress();
+            updateStepButtons();
+            (section || targetField).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function nextCalcStep() {
+            if (calcCurrentStep < calcTotalSteps) {
+                showStep(calcCurrentStep + 1);
+            } else {
+                // Final step: compute and show results only
+                calculateLifeInsurance();
+            }
+        }
+
+        function prevCalcStep() {
+            if (calcCurrentStep > 1) {
+                showStep(calcCurrentStep - 1);
+            }
+        }
+
+        function updateStepButtons() {
+            const backBtn = document.getElementById('stepBackBtn');
+            const nextBtn = document.getElementById('stepNextBtn');
+            backBtn.style.display = calcCurrentStep > 1 ? '' : 'none';
+            nextBtn.textContent = calcCurrentStep === calcTotalSteps ? 'Calculate Needs' : 'Next';
+        }
+    </script>
+</body>
+</html>
