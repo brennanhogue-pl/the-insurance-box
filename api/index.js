@@ -16,9 +16,6 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-// Serve static files from the parent directory
-app.use(express.static(path.join(__dirname, '..')));
-
 // Helper: build auth headers flexibly
 function buildAuthHeaders() {
     const headers = {};

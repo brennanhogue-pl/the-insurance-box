@@ -1,8 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/marketplace/:path*",
-      "destination": "/api"
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
